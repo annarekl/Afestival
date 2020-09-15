@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'GlyphWorld';
-  src: url('./media/GlyphWorld-Mountain.otf');
+  font-family: "GlyphWorld";
+  src: url("./media/GlyphWorld-Mountain.otf");
 }
 
 body {
@@ -51,7 +51,7 @@ li {
   justify-content: center;
   list-style: none;
   margin-left: 0;
-  font-family: 'GlyphWorld';
+  font-family: "GlyphWorld";
   font-size: calc(16px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
@@ -88,24 +88,38 @@ ul.day-grid li:nth-child(35) {
 
 @media all and (max-width: 800px) {
   ul {
-    grid-gap: .25em;
+    grid-gap: 0.25em;
   }
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }  
-  ul.weekdays li {
-    font-size: 0;
-  }
-  
-  ul.weekdays > li abbr:after {
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+        no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+    ul.weekdays li {
+      font-size: 0;
+    }
+
+    ul.weekdays > li abbr:after {
       content: attr(title);
       font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
-    text-align: center;
-    color: #fff;
+      text-align: center;
+      color: #fff;
     }
+  }
+}
+
+.today {
+  background-color: crimson !important ;
+}
+
+.festival-past-day {
+  background-color: #888888 !important ;
+}
+
+.festival-future-day {
+  background-color: #dddddd !important ;
 }

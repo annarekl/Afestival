@@ -1,87 +1,165 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>A festival 2020 | przez obłęd</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A festival 2020 | przez obłęd</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./modal.css" />
+  </head>
+  <body>
+    <header>
+      <div class="overlay">
+        <video
+          playsinline="playsinline"
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+        >
+          <source src="./media/header.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </header>
 
-</head>
-<body>
+    <div class="calendar">
+      <ul class="weekdays">
+        <li>
+          <abbr title="S">Poniedziałek</abbr>
+        </li>
+        <li>
+          <abbr title="M">Wtorek</abbr>
+        </li>
+        <li>
+          <abbr title="T">Środa</abbr>
+        </li>
+        <li>
+          <abbr title="W">Czwartek</abbr>
+        </li>
+        <li>
+          <abbr title="T">Piątek</abbr>
+        </li>
+        <li>
+          <abbr title="F">Sobota</abbr>
+        </li>
+        <li>
+          <abbr title="S">Niedziela</abbr>
+        </li>
+      </ul>
 
-<header>
-  <div class="overlay">
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="./media/header.mp4" type="video/mp4">
-  </video>
-  </div>
-</header>
+      <ul class="day-grid" id="calendar">
+        <li onclick="openModal(28)">28</li>
+        <li onclick="openModal(29)">29</li>
+        <li onclick="openModal(30)">30</li>
+        <li onclick="openModal(1)">1</li>
+        <li onclick="openModal(2)">2</li>
+        <li onclick="openModal(3)">3</li>
+        <li onclick="openModal(4)">4</li>
+        <li onclick="openModal(5)">5</li>
+        <li onclick="openModal(6)">6</li>
+        <li onclick="openModal(7)">7</li>
+        <li onclick="openModal(8)">8</li>
+        <li onclick="openModal(9)">9</li>
+        <li onclick="openModal(10)">10</li>
+        <li onclick="openModal(11)">11</li>
+        <li onclick="openModal(12)">12</li>
+        <li onclick="openModal(13)">13</li>
+        <li onclick="openModal(14)">14</li>
+        <li onclick="openModal(15)">15</li>
+        <li onclick="openModal(16)">16</li>
+        <li onclick="openModal(17)">17</li>
+        <li onclick="openModal(18)">18</li>
+        <li onclick="openModal(19)">19</li>
+        <li onclick="openModal(20)">20</li>
+        <li onclick="openModal(21)">21</li>
+        <li onclick="openModal(22)">22</li>
+        <li onclick="openModal(23)">23</li>
+        <li onclick="openModal(24)">24</li>
+        <li onclick="openModal(25)">25</li>
+        <li onclick="openModal(26)">26</li>
+        <li onclick="openModal(27)">27</li>
+        <li onclick="openModal(28)">28</li>
+        <li onclick="openModal(29)">29</li>
+        <li onclick="openModal(30)">30</li>
+        <li onclick="openModal(31)">31</li>
+        <li onclick="openModal(1)">1</li>
+      </ul>
+    </div>
+    <div id="day5" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Zaczynamy!</h2>
+        <p>Day 5</p>
+      </div>
+    </div>
+    <div id="day10" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Day 10</p>
+      </div>
+    </div>
+    <div id="day31" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Koniec :(</h2>
+        <p>Day 31</p>
+      </div>
+    </div>
+    <script>
+      function openModal(day) {
+        var modal = document.getElementById("day" + day);
+        if (modal) {
+          modal.style.display = "block";
 
-<div class="calendar">
-  <ul class="weekdays">
-    <li>
-      <abbr title="S">Poniedziałek</abbr>
-    </li>
-    <li>
-      <abbr title="M">Wtorek</abbr>
-    </li>
-    <li>
-      <abbr title="T">Środa</abbr>
-    </li>
-    <li>
-      <abbr title="W">Czwartek</abbr>
-    </li>
-    <li>
-      <abbr title="T">Piątek</abbr>
-    </li>
-    <li>
-      <abbr title="F">Sobota</abbr>
-    </li>
-    <li>
-      <abbr title="S">Niedziela</abbr>
-    </li>
-  </ul>
+          var span = modal.getElementsByClassName("close")[0];
 
-  <ul class="day-grid">
-    <li class="month=prev">28</li>
-    <li class="month=prev">29</li>
-    <li class="month=prev">30</li>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-    <li>8</li>
-    <li>9</li>
-    <li>10</li>
-    <li>11</li>
-    <li>12</li>
-    <li>13</li>
-    <li>14</li>
-    <li>15</li>
-    <li>16</li>
-    <li>17</li>
-    <li>18</li>
-    <li>19</li>
-    <li>20</li>
-    <li>21</li>
-    <li>22</li>
-    <li>23</li>
-    <li>24</li>
-    <li>25</li>
-    <li>26</li>
-    <li>27</li>
-    <li>28</li>
-    <li>29</li>
-    <li>30</li>
-    <li>31</li>
-    <li class="month-next">1</li>
-  </ul>
-    
-</div>
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
 
-  
-</body>
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+        }
+      }
+
+      var daysFromPreviousMonth = 3;
+      var festivalYear = 2020;
+      var festivalMonth = 10;
+      var festivalStartDay = 5;
+      var festivalEndDay = 31;
+
+      var today = new Date();
+      var today = new Date("2020/10/13");
+      var currentDay = +String(today.getDate()).padStart(2, "0");
+      var currentMonth = +String(today.getMonth() + 1).padStart(2, "0");
+      var currentYear = today.getFullYear();
+      if (currentYear == festivalYear && currentMonth == festivalMonth) {
+        var calendar = document.getElementById("calendar");
+        var days = calendar.getElementsByTagName("li");
+        var i;
+        for (i = 0; i < days.length; i++) {
+          var day = i - daysFromPreviousMonth + 1;
+          if (
+            currentDay == day &&
+            currentDay >= festivalStartDay &&
+            currentDay <= festivalEndDay
+          )
+            days[i].classList.add("today");
+          else if (
+            currentDay < day &&
+            day >= festivalStartDay &&
+            day <= festivalEndDay
+          )
+            days[i].classList.add("festival-future-day");
+          else if (currentDay > day && day >= festivalStartDay)
+            days[i].classList.add("festival-past-day");
+        }
+      }
+    </script>
+  </body>
 </html>
