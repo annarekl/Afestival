@@ -3,7 +3,7 @@
   src: url("./media/GlyphWorld-Mountain.otf");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans &display=swap");
 
 .video-header {
   position: absolute;
@@ -70,10 +70,7 @@ main::before {
 }
 
 main p {
-  margin-top: 1rem auto;
-  margin-left: 1rem auto;
-  margin-right: 1rem auto;
-  margin-bottom: 5rem;
+  margin: 1rem auto 1rem auto 5rem;
   font-family: "DM Sans", sans-serif;
   font-size: 2vh;
   color: white;
@@ -178,12 +175,12 @@ ul.day-grid li:nth-child(35) {
   background-color: #000;
 }
 
-@media all and (max-width: 800px) {
+@media all and(max-width: 800px) {
   ul {
     grid-gap: 0.25em;
   }
 
-  @media (pointer: coarse) and (hover: none) {
+  @media (pointer: coarse) and(hover: none) {
     header {
       background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
         no-repeat center center scroll;
@@ -205,20 +202,20 @@ ul.day-grid li:nth-child(35) {
 }
 
 .today {
-  background-color: crimson !important ;
+  background-color: crimson !important;
 }
 
 .festival-past-day {
-  background-color: #566769 !important ;
+  background-color: #566769 !important;
 }
 
 .festival-future-day {
-  background-color: #b6d6d8 !important ;
+  background-color: #b6d6d8 !important;
 }
 
 /* minimal sm icons */
 
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome / 4.3.0/css/font-awesome.min.css");
 
 a,
 a:hover {
@@ -242,7 +239,7 @@ a:hover {
 }
 
 .socialbtns ul {
-  padding: 0px;
+  padding: 0;
 }
 
 .socialbtns li {
@@ -253,14 +250,14 @@ a:hover {
 
 .socialbtns .fa {
   color: white;
-  text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
-    -1px -1px 0px #000;
-  -webkit-text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
-    -1px -1px 0px #000;
-  -moz-text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
-    -1px -1px 0px #000;
-  -o-text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
-    -1px -1px 0px #000;
+  text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    -1px -1px 0 #000;
+  -webkit-text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    -1px -1px 0 #000;
+  -moz-text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    -1px -1px 0 #000;
+  -o-text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    -1px -1px 0 #000;
   transition: all ease-out 0.5s;
   -moz-transition: all ease-out 0.5s;
   -webkit-transition: all ease-out 0.5s;
@@ -269,14 +266,14 @@ a:hover {
 
 .socialbtns .fa:hover {
   color: #000;
-  text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
-    -1px -1px 0px #fff;
-  -webkit-text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
-    -1px -1px 0px #fff;
-  -moz-text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
-    -1px -1px 0px #fff;
-  -o-text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
-    -1px -1px 0px #fff;
+  text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    -1px -1px 0 #fff;
+  -webkit-text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    -1px -1px 0 #fff;
+  -moz-text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    -1px -1px 0 #fff;
+  -o-text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    -1px -1px 0 #fff;
   transition: all ease 0.5s;
   -moz-transition: all ease-in 0.5s;
   -webkit-transition: all ease-in 0.5s;
@@ -285,10 +282,7 @@ a:hover {
 
 main footer {
   text-align: center;
-  margin-top: 5rem;
-  margin-left: 1rem auto;
-  margin-right: 1rem auto;
-  margin-bottom: 1rem auto;
+  margin: 5rem 1rem auto 1rem auto;
   color: gray;
 }
 

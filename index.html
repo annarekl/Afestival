@@ -1,185 +1,303 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>A < FESTIVAL 2020 | przez obłęd</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="./modal.css" />
-  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<header class="video-header">
-  <video src="./media/header.mp4" autoplay loop playsinline muted></video>
-    <div class="viewport-header">
-    <h2><i class="arrow down"></i></h2>
-  </div>
-  </div>
-</header>
-
-<main>
-  <h1>Festiwal</h1>
-   <p>Nazywamy się Fundacja Antyrama i już od niemalże 10 lat próbujemy sprawiać, żeby w miastach żyło się lepiej. Robimy to między innymi poprzez warsztaty, instalacje, wykłady, wydarzenia kulturalne. Naszym najbardziej rozpoznawalnym wydarzeniem jest A&lt;24 - 24- godzinny maraton projektowy, podczas którego uczestnicy pracują na realnych problemach, starając się osiągnąć jak najbardziej uniwersalne efekty.
-  <br><br>
-   Od trzech lat organizujemy również  A&lt;FESTIVAL - festiwal twórców przestrzeni miejskiej
-   Wszystkie wydarzenia, takie jak warsztaty, prelekcje, koncerty, imprezy, wykłady, dyskusje i spacery mają na celu poszerzanie horyzontów uczestników, obalanie stereotypów i edukację kulturalną.
-  <br><br>
-  Ze względu na wyjątkową sytuację w tym roku postanowiliśmy przenieść nasz festiwal w sferę online i zmienić nasz temat przewodni (co roku dobierany w nawiązaniu do aktualnych trendów, problemów i wyzwań miejskich) na KRYZYS. Chcemy jednak odejść od wszechobecnej już tematyki wirusa i skupić się na innych problemach z jakimi borykają się miasta, na czele z globalnym ociepleniem, rozlewaniem się miasta, chaosie przestrzennym, psychologii miasta i wielu innych. Festiwal rozciągnięty będzie na cały miesiąc październik.</p>
-
-  <h1>Wydarzenia</h1>
-   <div class="calendar">
-      <ul class="seven-grid weekdays">
-        <li>
-          <abbr title="M">Poniedzialek</abbr>
-        </li>
-        <li>
-          <abbr title="T">Wtorek</abbr>
-        </li>
-        <li>
-          <abbr title="W">Środa</abbr>
-        </li>
-        <li>
-          <abbr title="T">Czwartek</abbr>
-        </li>
-        <li>
-          <abbr title="F">Piatek</abbr>
-        </li>
-        <li>
-          <abbr title="S">Sobota</abbr>
-        </li>
-        <li>
-          <abbr title="S">Niedziela</abbr>
-        </li>
-      </ul>
-
-     <ul class="seven-grid day-grid" id="calendar">
-        <li class="day" onclick="openModal(28)"><div class="number">28</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(29)"><div class="number">29</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(30)"><div class="number">30</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(1)"><div class="number">1</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(2)"><div class="number">2</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(3)"><div class="number">3</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(4)"><div class="number">4</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(5)"><div class="number">5</div><div class="title">spacer 1/3</div></li>
-        <li class="day" onclick="openModal(6)"><div class="number">6</div><div class="title">MIASTORANEK<br>Kiosk Umiejętności 1/4</div></li>
-        <li class="day" onclick="openModal(7)"><div class="number">7</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(8)"><div class="number">8</div><div class="title">Pobudki 1/4<br>urban drink 1/4</div></li>
-        <li class="day" onclick="openModal(9)"><div class="number">9</div><div class="title">A&lt;SYMETRIE 1/2</div></li>
-        <li class="day" onclick="openModal(10)"><div class="number">10</div><div class="title">skill lab 1/3</div></li>
-        <li class="day" onclick="openModal(11)"><div class="number">11</div><div class="title">perfo 1/3</div></li>
-        <li class="day" onclick="openModal(12)"><div class="number">12</div><div class="title">spacer 2/3</div></li>
-        <li class="day" onclick="openModal(13)"><div class="number">13</div><div class="title">MIASTORANEK<br>Kiosk Umiejętności 2/4</div></li>
-        <li class="day" onclick="openModal(14)"><div class="number">14</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(15)"><div class="number">15</div><div class="title">Pobudki 2/4<br>urban drink 2/4</div></li>
-        <li class="day" onclick="openModal(16)"><div class="number">16</div><div class="title">plug in 1/2</div></li>
-        <li class="day" onclick="openModal(17)"><div class="number">17</div><div class="title">skill lab 2/3</div></li>
-        <li class="day" onclick="openModal(18)"><div class="number">18</div><div class="title">perfo 2/3</div></li>
-        <li class="day" onclick="openModal(19)"><div class="number">19</div><div class="title">spacer 3/3</div></li>
-        <li class="day" onclick="openModal(20)"><div class="number">20</div><div class="title">MIASTORANEK<br>Kiosk Umiejętności 3/4</div></li>
-        <li class="day" onclick="openModal(21)"><div class="number">21</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(22)"><div class="number">22</div><div class="title">Pobudki 3/4<br>urban drink 3/4</div></li>
-        <li class="day" onclick="openModal(23)"><div class="number">23</div><div class="title">A&lt;SYMETRIE 2/2</div></li>
-        <li class="day" onclick="openModal(24)"><div class="number">24</div><div class="title">A&lt;24 ONLINE</div></li>
-        <li class="day" onclick="openModal(25)"><div class="number">25</div><div class="title">perfo 3/3</div></li>
-        <li class="day" onclick="openModal(26)"><div class="number">26</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(27)"><div class="number">27</div><div class="title">MIASTORANEK<br>Kiosk Umiejętności 4/4</div></li>
-        <li class="day" onclick="openModal(28)"><div class="number">28</div><div class="title"></div></li>
-        <li class="day" onclick="openModal(29)"><div class="number">29</div><div class="title">Pobudki 4/4<br>urban drink 4/4</div></li>
-        <li class="day" onclick="openModal(30)"><div class="number">30</div><div class="title">Miejska Loża</div></li>
-        <li class="day" onclick="openModal(31)"><div class="number">31</div><div class="title">skill lab 3/3</div></li>
-        <li class="day" onclick="openModal(1)"><div class="number">1</div><div class="title">Title</div></li>
-      </ul>
-    </div>
-    <div id="day5" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h3>Zaczynamy!</h3>
-        <p>Day 5</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A&lt;FESTIVAL 2020 | przez obłęd</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="video-header">
+      <video src="./media/header.mp4" autoplay loop playsinline muted></video>
+      <div class="viewport-header">
+        <h2><i class="arrow down"></i></h2>
       </div>
-    </div>
-    <div id="day10" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h3>Day 10</h3>
+    </header>
+
+    <main>
+      <h1>Festiwal</h1>
+      <p>
+        Nazywamy się Fundacja Antyrama i już od niemalże 10 lat próbujemy
+        sprawiać, żeby w miastach żyło się lepiej. Robimy to między innymi
+        poprzez warsztaty, instalacje, wykłady, wydarzenia kulturalne. Naszym
+        najbardziej rozpoznawalnym wydarzeniem jest A&lt;24 - 24- godzinny
+        maraton projektowy, podczas którego uczestnicy pracują na realnych
+        problemach, starając się osiągnąć jak najbardziej uniwersalne efekty.
+        <br /><br />
+        Od trzech lat organizujemy również A&lt;FESTIVAL - festiwal twórców
+        przestrzeni miejskiej Wszystkie wydarzenia, takie jak warsztaty,
+        prelekcje, koncerty, imprezy, wykłady, dyskusje i spacery mają na celu
+        poszerzanie horyzontów uczestników, obalanie stereotypów i edukację
+        kulturalną.
+        <br /><br />
+        Ze względu na wyjątkową sytuację w tym roku postanowiliśmy przenieść
+        nasz festiwal w sferę online i zmienić nasz temat przewodni (co roku
+        dobierany w nawiązaniu do aktualnych trendów, problemów i wyzwań
+        miejskich) na KRYZYS. Chcemy jednak odejść od wszechobecnej już tematyki
+        wirusa i skupić się na innych problemach z jakimi borykają się miasta,
+        na czele z globalnym ociepleniem, rozlewaniem się miasta, chaosie
+        przestrzennym, psychologii miasta i wielu innych. Festiwal rozciągnięty
+        będzie na cały miesiąc październik.
+      </p>
+
+      <h1>Wydarzenia</h1>
+      <div class="calendar">
+        <ul class="seven-grid weekdays">
+          <li>
+            <abbr title="M">Poniedzialek</abbr>
+          </li>
+          <li>
+            <abbr title="T">Wtorek</abbr>
+          </li>
+          <li>
+            <abbr title="W">Środa</abbr>
+          </li>
+          <li>
+            <abbr title="T">Czwartek</abbr>
+          </li>
+          <li>
+            <abbr title="F">Piatek</abbr>
+          </li>
+          <li>
+            <abbr title="S">Sobota</abbr>
+          </li>
+          <li>
+            <abbr title="S">Niedziela</abbr>
+          </li>
+        </ul>
+
+        <ul class="seven-grid day-grid" id="calendar">
+          <li class="day" onclick="openModal(28)">
+            <div class="number">28</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(29)">
+            <div class="number">29</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(30)">
+            <div class="number">30</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(1)">
+            <div class="number">1</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(2)">
+            <div class="number">2</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(3)">
+            <div class="number">3</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(4)">
+            <div class="number">4</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(5)">
+            <div class="number">5</div>
+            <div class="title">spacer 1/3</div>
+          </li>
+          <li class="day" onclick="openModal(6)">
+            <div class="number">6</div>
+            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 1/4</div>
+          </li>
+          <li class="day" onclick="openModal(7)">
+            <div class="number">7</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(8)">
+            <div class="number">8</div>
+            <div class="title">Pobudki 1/4<br />urban drink 1/4</div>
+          </li>
+          <li class="day" onclick="openModal(9)">
+            <div class="number">9</div>
+            <div class="title">A&lt;SYMETRIE 1/2</div>
+          </li>
+          <li class="day" onclick="openModal(10)">
+            <div class="number">10</div>
+            <div class="title">skill lab 1/3</div>
+          </li>
+          <li class="day" onclick="openModal(11)">
+            <div class="number">11</div>
+            <div class="title">perfo 1/3</div>
+          </li>
+          <li class="day" onclick="openModal(12)">
+            <div class="number">12</div>
+            <div class="title">spacer 2/3</div>
+          </li>
+          <li class="day" onclick="openModal(13)">
+            <div class="number">13</div>
+            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 2/4</div>
+          </li>
+          <li class="day" onclick="openModal(14)">
+            <div class="number">14</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(15)">
+            <div class="number">15</div>
+            <div class="title">Pobudki 2/4<br />urban drink 2/4</div>
+          </li>
+          <li class="day" onclick="openModal(16)">
+            <div class="number">16</div>
+            <div class="title">plug in 1/2</div>
+          </li>
+          <li class="day" onclick="openModal(17)">
+            <div class="number">17</div>
+            <div class="title">skill lab 2/3</div>
+          </li>
+          <li class="day" onclick="openModal(18)">
+            <div class="number">18</div>
+            <div class="title">perfo 2/3</div>
+          </li>
+          <li class="day" onclick="openModal(19)">
+            <div class="number">19</div>
+            <div class="title">spacer 3/3</div>
+          </li>
+          <li class="day" onclick="openModal(20)">
+            <div class="number">20</div>
+            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 3/4</div>
+          </li>
+          <li class="day" onclick="openModal(21)">
+            <div class="number">21</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(22)">
+            <div class="number">22</div>
+            <div class="title">Pobudki 3/4<br />urban drink 3/4</div>
+          </li>
+          <li class="day" onclick="openModal(23)">
+            <div class="number">23</div>
+            <div class="title">A&lt;SYMETRIE 2/2</div>
+          </li>
+          <li class="day" onclick="openModal(24)">
+            <div class="number">24</div>
+            <div class="title">A&lt;24 ONLINE</div>
+          </li>
+          <li class="day" onclick="openModal(25)">
+            <div class="number">25</div>
+            <div class="title">perfo 3/3</div>
+          </li>
+          <li class="day" onclick="openModal(26)">
+            <div class="number">26</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(27)">
+            <div class="number">27</div>
+            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 4/4</div>
+          </li>
+          <li class="day" onclick="openModal(28)">
+            <div class="number">28</div>
+            <div class="title"></div>
+          </li>
+          <li class="day" onclick="openModal(29)">
+            <div class="number">29</div>
+            <div class="title">Pobudki 4/4<br />urban drink 4/4</div>
+          </li>
+          <li class="day" onclick="openModal(30)">
+            <div class="number">30</div>
+            <div class="title">Miejska Loża</div>
+          </li>
+          <li class="day" onclick="openModal(31)">
+            <div class="number">31</div>
+            <div class="title">skill lab 3/3</div>
+          </li>
+          <li class="day" onclick="openModal(1)">
+            <div class="number">1</div>
+            <div class="title">Title</div>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div id="day31" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h3>Koniec :(</h3>
-        <p>Day 31</p>
+      <div id="day5" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Zaczynamy!</h3>
+          <p>Day 5</p>
+        </div>
       </div>
-    </div>
-    <script>
-      function openModal(day) {
-        var modal = document.getElementById("day" + day);
-        if (modal) {
-          modal.style.display = "block";
+      <div id="day10" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Day 10</h3>
+        </div>
+      </div>
+      <div id="day31" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Koniec :(</h3>
+          <p>Day 31</p>
+        </div>
+      </div>
+      <script>
+        function openModal(day) {
+          var modal = document.getElementById("day" + day);
+          if (modal) {
+            modal.style.display = "block";
 
-          var span = modal.getElementsByClassName("close")[0];
+            var span = modal.getElementsByClassName("close")[0];
 
-          span.onclick = function () {
-            modal.style.display = "none";
-          };
-
-          window.onclick = function (event) {
-            if (event.target == modal) {
+            span.onclick = function () {
               modal.style.display = "none";
-            }
-          };
+            };
+
+            window.onclick = function (event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            };
+          }
         }
-      }
 
-      var daysFromPreviousMonth = 3;
-      var festivalYear = 2020;
-      var festivalMonth = 10;
-      var festivalStartDay = 5;
-      var festivalEndDay = 31;
+        var daysFromPreviousMonth = 3;
+        var festivalYear = 2020;
+        var festivalMonth = 10;
+        var festivalStartDay = 5;
+        var festivalEndDay = 31;
 
-      var today = new Date();
-      var today = new Date("2020/10/13");
-      var currentDay = +String(today.getDate()).padStart(2, "0");
-      var currentMonth = +String(today.getMonth() + 1).padStart(2, "0");
-      var currentYear = today.getFullYear();
-      if (currentYear == festivalYear && currentMonth == festivalMonth) {
-        var calendar = document.getElementById("calendar");
-        var days = calendar.getElementsByTagName("li");
-        var i;
-        for (i = 0; i < days.length; i++) {
-          var day = i - daysFromPreviousMonth + 1;
-          if (
-            currentDay == day &&
-            currentDay >= festivalStartDay &&
-            currentDay <= festivalEndDay
-          )
-            days[i].classList.add("today");
-          else if (
-            currentDay < day &&
-            day >= festivalStartDay &&
-            day <= festivalEndDay
-          )
-            days[i].classList.add("festival-future-day");
-          else if (currentDay > day && day >= festivalStartDay)
-            days[i].classList.add("festival-past-day");
+        var today = new Date();
+        var today = new Date("2020/10/13");
+        var currentDay = +String(today.getDate()).padStart(2, "0");
+        var currentMonth = +String(today.getMonth() + 1).padStart(2, "0");
+        var currentYear = today.getFullYear();
+        if (currentYear == festivalYear && currentMonth == festivalMonth) {
+          var calendar = document.getElementById("calendar");
+          var days = calendar.getElementsByTagName("li");
+          var i;
+          for (i = 0; i < days.length; i++) {
+            var day = i - daysFromPreviousMonth + 1;
+            if (
+              currentDay == day &&
+              currentDay >= festivalStartDay &&
+              currentDay <= festivalEndDay
+            )
+              days[i].classList.add("today");
+            else if (
+              currentDay < day &&
+              day >= festivalStartDay &&
+              day <= festivalEndDay
+            )
+              days[i].classList.add("festival-future-day");
+            else if (currentDay > day && day >= festivalStartDay)
+              days[i].classList.add("festival-past-day");
+          }
         }
-      }
-    </script>
+      </script>
 
-<footer>
-    <div class="socialbtns">
-      <ul>
-          <li><a href="www.facebook.pl" class="fa fa-lg fa-facebook"></a></li>
-          <li><a href="#" class="fa fa-lg fa-instagram"></a></li>
-          <li><a href="#" class="fa fa-lg fa-youtube"></a></li>
-      </ul>
-    </div>
-<ft>Copyright 2020 A&lt;Festival</ft>
-</footer>
-</div>
-
-
-</main>
-<!-- partial -->
-  
-</body>
+      <footer>
+        <div class="socialbtns">
+          <ul>
+            <li><a href="www.facebook.pl" class="fa fa-lg fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-lg fa-instagram"></a></li>
+            <li><a href="#" class="fa fa-lg fa-youtube"></a></li>
+          </ul>
+        </div>
+        <ft>Copyright 2020 A&lt;Festival</ft>
+      </footer>
+    </main>
+  </body>
 </html>
