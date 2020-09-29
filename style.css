@@ -127,6 +127,7 @@ ul.weekdays {
 
 ul.weekdays li {
   height: 4vw;
+  font-family: 'GlyphWorld';
 }
 
 ul.day-grid li {
@@ -134,6 +135,20 @@ ul.day-grid li {
   border: 1px solid #000;
   height: 12vw;
   max-height: 125px;
+  position: relative;
+}
+
+ul.day-grid li div.number{
+  font-family: 'GlyphWorld';
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+ul.day-grid li div.title{
+  font-family: 'GlyphWorld';
 }
 
 ul.weekdays abbr[title] {
