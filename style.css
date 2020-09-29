@@ -3,7 +3,7 @@
   src: url("./media/GlyphWorld-Mountain.otf");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 .video-header {
   position: absolute;
@@ -74,10 +74,9 @@ main p {
   margin-left: 1rem auto;
   margin-right: 1rem auto;
   margin-bottom: 5rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 2vh;
   color: white;
-
 }
 
 h1 {
@@ -129,7 +128,7 @@ li {
   justify-content: center;
   list-style: none;
   margin-left: 0;
-  font-size: calc(14px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(14px + (21 - 16) * ((100vw - 300px) / (1600 - 300)) - 2px);
 }
 
 ul.weekdays {
@@ -160,8 +159,9 @@ ul.day-grid li div.number {
   padding-left: 10px;
 }
 
-ul.day-grid li div.title{
-  font-family: 'DM Sans', sans-serif;
+ul.day-grid li div.title {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
 }
 
 ul.weekdays abbr[title] {
