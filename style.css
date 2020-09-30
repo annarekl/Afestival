@@ -70,7 +70,8 @@ main::before {
 }
 
 main p {
-  margin: 1rem auto 1rem auto 5rem;
+  margin: 1rem auto 1rem auto 3rem;
+  width: 50%;
   font-family: "DM Sans", sans-serif;
   font-size: 2vh;
   color: white;
@@ -229,13 +230,13 @@ a:hover {
 .socialbtnsbtnsbtns li {
   margin: 0;
   padding: 5px;
-  color: white;
+  color: gray;
 }
 
 .socialbtnsbtnsbtns li {
   list-style: none outside none;
   display: inline-block;
-  color: white;
+  color: gray;
 }
 
 .socialbtns ul {
@@ -245,11 +246,11 @@ a:hover {
 .socialbtns li {
   list-style: none outside none;
   display: inline-block;
-  color: white;
+  color: gray;
 }
 
 .socialbtns .fa {
-  color: white;
+  color: gray;
   text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     -1px -1px 0 #000;
   -webkit-text-shadow: 1px 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
