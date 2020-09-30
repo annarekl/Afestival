@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans &display=swap");
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 50px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -16,17 +18,34 @@
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
+  padding: 1rem;
   border: 1px solid #888;
-  width: 80%;
+  font-family: "DM Sans", sans-serif;
+}
+
+@media screen and (min-width: 400px) {
+  .modal-content {
+    margin: auto 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .modal-content {
+    margin: auto 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-content {
+    margin: auto 10rem;
+  }
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 50px;
   font-weight: bold;
 }
 

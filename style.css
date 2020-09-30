@@ -126,6 +126,13 @@ h2 {
 
 h3 {
   color: black;
+  font-family: "SH PINSCHER";
+}
+
+h4 {
+  font-color: black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2vh;
 }
 
 .arrow {
