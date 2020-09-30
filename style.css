@@ -3,6 +3,11 @@
   src: url("./media/GlyphWorld-Mountain.otf");
 }
 
+@font-face {
+  font-family: "SH PINSCHER";
+  src: url("./fonts/SHPinscher-Regular.otf");
+}
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans &display=swap");
 
 .video-header {
@@ -50,18 +55,17 @@ html {
 }
 
 body {
+  background: black;
   margin: 0;
 }
 
 main {
-  background: black;
   position: relative;
-  padding: 5rem;
   margin-top: 100vh;
 }
+
 main::before {
   content: "";
-  width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -78,7 +82,7 @@ main p {
 }
 
 h1 {
-  font-family: "GlyphWorld";
+  font-family: "GlyphWorld", "SH PINSCHER";
   color: white;
   font-size: 3vw;
   text-align: left;
@@ -114,7 +118,7 @@ h3 {
 ul.seven-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 1em;
+  grid-gap: 0.5em;
   margin: 0 auto;
   max-width: 64em;
   padding: 0;
@@ -126,7 +130,7 @@ li {
   justify-content: center;
   list-style: none;
   margin-left: 0;
-  font-size: calc(14px + (21 - 16) * ((100vw - 300px) / (1600 - 300)) - 2px);
+  font-size: calc(14px + (21 - 16) * ((100vw - 300px) / (1600 - 300)));
 }
 
 ul.weekdays {
@@ -137,19 +141,19 @@ ul.weekdays {
 
 ul.weekdays li {
   height: 4vw;
-  font-family: "GlyphWorld";
+  font-family: "GlyphWorld", "SH PINSCHER";
 }
 
 ul.day-grid li {
   background-color: #292929;
   border: 1px solid #000;
   height: 12vw;
-  max-height: 125px;
+  max-height: 150px;
   position: relative;
 }
 
 ul.day-grid li div.number {
-  font-family: "GlyphWorld";
+  font-family: "GlyphWorld", "SH PINSCHER";
   position: absolute;
   top: 0;
   left: 0;
@@ -158,7 +162,8 @@ ul.day-grid li div.number {
 }
 
 ul.day-grid li div.title {
-  font-family: "DM Sans", sans-serif;
+  font-family: "SH PINSCHER", sans-serif;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -225,6 +230,10 @@ a:hover {
   padding: 5px;
 }
 
+.socialbtns {
+  padding-top: 2rem;
+}
+
 .socialbtnsbtnsbtns,
 .socialbtnsbtnsbtns ul,
 .socialbtnsbtnsbtns li {
@@ -283,13 +292,14 @@ a:hover {
 
 main footer {
   text-align: center;
-  margin: 5rem 1rem auto 1rem auto;
+  margin: 2rem 1rem auto 1rem auto;
   color: gray;
 }
 
-ft {
-  font-family: "GlyphWorld";
+footer {
+  font-family: "GlyphWorld", "SH PINSCHER";
   color: gray;
   font-size: 1vw;
   text-align: left;
+  margin-bottom: 2rem;
 }
