@@ -11,24 +11,22 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans &display=swap");
 
 .video-header {
-  position: absolute;
   text-align: center;
   width: 100vw;
-  height: 100vh;
 }
 .video-header,
 .video-header video,
 .video-header .viewport-header {
   width: 100vw;
-  height: 100vh;
-  position: absolute;
   top: 0;
   left: 0;
 }
+
 .video-header video {
-  background: brown;
-  object-fit: cover;
+  background: black;
+  object-fit: contain;
 }
+
 .video-header .viewport-header {
   display: flex;
   align-items: center;
@@ -61,7 +59,24 @@ body {
 
 main {
   position: relative;
-  margin-top: 100vh;
+}
+
+@media screen and (min-width: 400px) {
+  main {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    padding: 1rem 10rem;
+  }
 }
 
 main::before {
@@ -75,10 +90,21 @@ main::before {
 
 main p {
   margin: 1rem auto 1rem auto 3rem;
-  width: 50%;
   font-family: "DM Sans", sans-serif;
   font-size: 2vh;
   color: white;
+}
+
+@media screen and (min-width: 400px) {
+  main p {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main p {
+    width: 50%;
+  }
 }
 
 h1 {
@@ -113,6 +139,11 @@ h3 {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.description {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 ul.seven-grid {
