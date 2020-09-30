@@ -155,6 +155,18 @@ ul.seven-grid {
   padding: 0;
 }
 
+@media screen and (min-width: 400px) {
+  ul.seven-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ul.seven-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
 li {
   display: flex;
   align-items: center;
@@ -184,6 +196,7 @@ ul.day-grid li {
 }
 
 ul.day-grid li div.number {
+  font-size: 2vh;
   font-family: "GlyphWorld", "SH PINSCHER";
   position: absolute;
   top: 0;
@@ -193,6 +206,7 @@ ul.day-grid li div.number {
 }
 
 ul.day-grid li div.title {
+  font-size: 2vh;
   font-family: "SH PINSCHER", sans-serif;
   padding-top: 10px;
   text-align: center;
@@ -204,12 +218,37 @@ ul.weekdays abbr[title] {
   text-decoration: none;
 }
 
-ul.day-grid li:nth-child(1),
-ul.day-grid li:nth-child(2),
-ul.day-grid li:nth-child(3),
-ul.day-grid li:nth-child(3),
-ul.day-grid li:nth-child(35) {
-  background-color: #000;
+@media screen and (min-width: 400px) {
+  ul.day-grid li:nth-child(1),
+  ul.day-grid li:nth-child(2),
+  ul.day-grid li:nth-child(3),
+  ul.day-grid li:nth-child(3),
+  ul.day-grid li:nth-child(35) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ul.day-grid li:nth-child(1),
+  ul.day-grid li:nth-child(2),
+  ul.day-grid li:nth-child(3),
+  ul.day-grid li:nth-child(3),
+  ul.day-grid li:nth-child(35) {
+    display: block;
+    background-color: #000;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  ul.weekdays {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  ul.weekdays {
+    display: grid;
+  }
 }
 
 @media all and(max-width: 800px) {
