@@ -62,7 +62,7 @@ li.with-modal {
 .event {
   margin: 1rem auto 1rem auto 3rem;
   font-family: "DM Sans", sans-serif;
-  font-size: 2vh;
+  font-size: 14px;
   text-align: justify;
   text-justify: inter-word;
   color: black;
