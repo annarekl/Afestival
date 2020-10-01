@@ -14,9 +14,9 @@
   text-align: center;
   width: 100vw;
 }
+
 .video-header,
-.video-header video,
-.video-header .viewport-header {
+.video-header video{
   width: 100vw;
   top: 0;
   left: 0;
@@ -27,10 +27,11 @@
   object-fit: contain;
 }
 
-.video-header .viewport-header {
+.video-header  {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 html,
@@ -112,22 +113,22 @@ h3 {
 }
 
 h4 {
-  font-color: black;
+  color: black;
   font-family: "DM Sans", sans-serif;
   font-size: 2em;
 }
 
-.arrow {
+.arrow-down {
   border: solid white;
   border-width: 0 15px 15px 0;
   display: inline-block;
   padding: 15px;
   margin-bottom: 1rem;
-}
-
-.down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  position: absolute;
+  left: auto;
+  bottom: 6vw;
 }
 
 .description {

@@ -13,9 +13,7 @@
   <body>
     <header class="video-header">
       <video src="./media/header.mp4" autoplay loop muted></video>
-      <div class="viewport-header">
-        <i class="arrow down"></i>
-      </div>
+      <i class="arrow-down"></i>
     </header>
     <main>
       <h1>Festiwal</h1>
@@ -252,21 +250,46 @@
             monumentalnego oraz trzyletniego projektu badawczego „Place Warszawy
             (do odzyskania)”. Stypendystka Ministra Kultury i Dziedzictwa
             Narodowego.
-          </p>         
-<div class="modal-video">
-  <iframe
-  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fantyrama%2Fvideos%2F342155547219721%2F&show_text=0&width=560"
-  width="560"
-  height="315"
-  style="margin: 0 auto; border: none; overflow: hidden"
-  scrolling="no"
-  frameborder="0"
-  allowTransparency="true"
-  allowfullscreen="true"
-></iframe>
-</div>
+          </p>
+          <div class="modal-video">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fantyrama%2Fvideos%2F342155547219721%2F&show_text=0&width=560"
+              width="560"
+              height="315"
+              style="margin: 0 auto; border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
         </div>
       </div>
+      <footer>
+        <div class="socialbtns">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/afestival.katowice"
+                class="fa fa-lg fa-facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/_antyrama/"
+                class="fa fa-lg fa-instagram"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCv63YgKPku-gfxJL2OCa_VQ"
+                class="fa fa-lg fa-youtube"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <ft>Copyright © 2020 A&lt;festival & ANTYRAMA</ft>
+      </footer>
       <script>
         function openModal(day) {
           var modal = document.getElementById("day" + day);
@@ -321,33 +344,12 @@
             else days[i].classList.remove("with-modal");
           }
         }
-      </script>
 
-      <footer>
-        <div class="socialbtns">
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/afestival.katowice"
-                class="fa fa-lg fa-facebook"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/_antyrama/"
-                class="fa fa-lg fa-instagram"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCv63YgKPku-gfxJL2OCa_VQ"
-                class="fa fa-lg fa-youtube"
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <ft>Copyright © 2020 A&lt;festival & ANTYRAMA</ft>
-      </footer>
+        document.getElementsByClassName("arrow-down")[0].animate([{ bottom: "6vw" }, { bottom: "5.5vw" }, { bottom: "6vw" }], {
+            duration: 700,
+            iterations: Infinity,
+          });        
+      </script>
     </main>
   </body>
 </html>
