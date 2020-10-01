@@ -88,25 +88,6 @@ main::before {
   top: -100vh;
 }
 
-main p {
-  margin: 1rem auto 1rem auto 3rem;
-  font-family: "DM Sans", sans-serif;
-  font-size: 2vh;
-  color: white;
-}
-
-@media screen and (min-width: 400px) {
-  main p {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  main p {
-    width: 50%;
-  }
-}
-
 h1 {
   font-family: "GlyphWorld", "SH PINSCHER";
   color: white;
@@ -149,8 +130,24 @@ h4 {
 }
 
 .description {
+  margin: 1rem auto 1rem auto 3rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2vh;
   text-align: justify;
   text-justify: inter-word;
+  color: white;
+}
+
+@media screen and (min-width: 400px) {
+  .description {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    width: 50%;
+  }
 }
 
 ul.seven-grid {

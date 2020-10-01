@@ -6,6 +6,7 @@
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 50px; /* Location of the box */
+  padding-bottom: 50px;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -58,4 +59,13 @@
 
 li.with-modal {
   cursor: pointer;
+}
+
+.event {
+  margin: 1rem auto 1rem auto 3rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2vh;
+  text-align: justify;
+  text-justify: inter-word;
+  color: black;
 }
