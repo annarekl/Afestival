@@ -109,13 +109,13 @@ h2 {
 h3 {
   color: black;
   font-family: "SH PINSCHER";
-  font-size: 1em;
+  font-size: 2em;
 }
 
 h4 {
   color: black;
   font-family: "DM Sans", sans-serif;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .arrow-down {
@@ -131,11 +131,20 @@ h4 {
   bottom: 6vw;
 }
 
+.event {
+  margin: 1rem auto 1rem auto 3rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: black;
+}
+
 .description {
   margin: 1rem auto 1rem auto 3rem;
   font-family: "DM Sans", sans-serif;
   font-size: 2vh;
-  text-align: justify;
+  text-align: left;
   text-justify: inter-word;
   color: white;
 }
