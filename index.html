@@ -1,855 +1,950 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>A&lt;FESTIVAL 2020 | przez obłęd</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./modal.css" />
-    <link
-      rel="stylesheet"
-      href="./font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <header class="video-header">
-      <video src="./media/header.mp4" autoplay loop muted></video>
-      <i class="arrow-down"></i>
-    </header>
-    <main>
-      <h1>Festiwal</h1>
-      <p class="description">
-        Nazywamy się Fundacja Antyrama i już od niemalże 10 lat próbujemy
-        sprawiać, żeby w miastach żyło się lepiej. Robimy to między innymi
-        poprzez warsztaty, instalacje, wykłady, wydarzenia kulturalne. Naszym
-        najbardziej rozpoznawalnym wydarzeniem jest A&lt;24 - 24-godzinny
-        maraton projektowy, podczas którego uczestnicy pracują na realnych
-        problemach, starając się osiągnąć jak najbardziej uniwersalne efekty.
-      </p>
-      <p class="description">
-        Od trzech lat organizujemy również A&lt;FESTIVAL - festiwal twórców
-        przestrzeni miejskiej Wszystkie wydarzenia, takie jak warsztaty,
-        prelekcje, koncerty, imprezy, wykłady, dyskusje i spacery mają na celu
-        poszerzanie horyzontów uczestników, obalanie stereotypów i edukację
-        kulturalną.
-      </p>
-      <p class="description">
-        Ze względu na wyjątkową sytuację w tym roku postanowiliśmy przenieść
-        nasz festiwal w sferę online i zmienić nasz temat przewodni (co roku
-        dobierany w nawiązaniu do aktualnych trendów, problemów i wyzwań
-        miejskich) na KRYZYS. Chcemy jednak odejść od wszechobecnej już tematyki
-        wirusa i skupić się na innych problemach z jakimi borykają się miasta,
-        na czele z globalnym ociepleniem, rozlewaniem się miasta, chaosie
-        przestrzennym, psychologii miasta i wielu innych. Festiwal rozciągnięty
-        będzie na cały miesiąc październik.
-      </p>
 
-      <h1>Wydarzenia</h1>
-      <div class="calendar">
-        <ul class="seven-grid weekdays">
-          <li>
-            <abbr title="M">PONIEDZIAŁEK</abbr>
-          </li>
-          <li>
-            <abbr title="T">WTOREK</abbr>
-          </li>
-          <li>
-            <abbr title="W">ŚRODA</abbr>
-          </li>
-          <li>
-            <abbr title="T">CZWARTEK</abbr>
-          </li>
-          <li>
-            <abbr title="F">PIĄTEK</abbr>
-          </li>
-          <li>
-            <abbr title="S">SOBOTA</abbr>
-          </li>
-          <li>
-            <abbr title="S">NIEDZIELA</abbr>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <title>A&lt;FESTIVAL 2020 | przez obłęd</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./modal.css" />
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
 
-        <ul class="seven-grid day-grid" id="calendar">
-          <li class="day with-modal" onclick="openModal(28)">
-            <div class="number">28</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(29)">
-            <div class="number">29</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(30)">
-            <div class="number">30</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(1)">
-            <div class="number">1</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(2)">
-            <div class="number">2</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(3)">
-            <div class="number">3</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(4)">
-            <div class="number">4</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(5)">
-            <div class="number">5</div>
-            <div class="title">spacer 1/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(6)">
-            <div class="number">6</div>
-            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 1/4</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(7)">
-            <div class="number">7</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(8)">
-            <div class="number">8</div>
-            <div class="title">Pobudki<br />urban drink 1/4</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(9)">
-            <div class="number">9</div>
-            <div class="title">A&lt;SYMETRIE 1/2</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(10)">
-            <div class="number">10</div>
-            <div class="title">skill lab 1/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(11)">
-            <div class="number">11</div>
-            <div class="title">perfo 1/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(12)">
-            <div class="number">12</div>
-            <div class="title">spacer 2/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(13)">
-            <div class="number">13</div>
-            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 2/4</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(14)">
-            <div class="number">14</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(15)">
-            <div class="number">15</div>
-            <div class="title">Pobudki<br />urban drink 2/4</div>
-          </li>
-          <li class="day with-modal">
-            <div class="number">16</div>
-            <div class="title">plug in</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(17)">
-            <div class="number">17</div>
-            <div class="title">skill lab 2/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(18)">
-            <div class="number">18</div>
-            <div class="title">perfo 2/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(19)">
-            <div class="number">19</div>
-            <div class="title">spacer 3/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(20)">
-            <div class="number">20</div>
-            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 3/4</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(21)">
-            <div class="number">21</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(22)">
-            <div class="number">22</div>
-            <div class="title">Pobudki<br />urban drink 3/4</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(23)">
-            <div class="number">23</div>
-            <div class="title">A&lt;SYMETRIE 2/2</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(24)">
-            <div class="number">24</div>
-            <div class="title">A&lt;24 ONLINE</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(25)">
-            <div class="number">25</div>
-            <div class="title">perfo 3/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(26)">
-            <div class="number">26</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(27)">
-            <div class="number">27</div>
-            <div class="title">MIASTORANEK<br />Kiosk Umiejętności 4/4</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(28)">
-            <div class="number">28</div>
-            <div class="title"></div>
-          </li>
-          <li class="day with-modal" onclick="openModal(29)">
-            <div class="number">29</div>
-            <div class="title">Pobudki<br />urban drink 4/4</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(30)">
-            <div class="number">30</div>
-            <div class="title">Miejska Loża</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(31)">
-            <div class="number">31</div>
-            <div class="title">skill lab 3/3</div>
-          </li>
-          <li class="day with-modal" onclick="openModal(1)">
-            <div class="number">1</div>
-            <div class="title"></div>
-          </li>
-        </ul>
-      </div>
-      <div id="day5" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            spacer 1/3 | miejskie eksplorowanie: Halo! Gdzie jest sztuka w
-            przestrzeni publicznej?
-          </h3>
-          <p class="event">
-            Nowy mural, instalacja w przejściu podziemnym, świecący neon,
-            ogromna maskotka czy dziwny obiekt uwięziony w gałęziach drzew - te
-            widoki dobrze znamy z mediów społecznościowych. Czasami podczas
-            codziennej miejskiej rutyny zostajemy pozytywnie zaskoczeni albo
-            ...zbulwersowani. Street art jest wszędzie wokół, ale konkretnie:
-            gdzie? Gdzie go szukać, po co powstaje i jakie ma znaczenie dowiemy
-            się w ramach miejskiego eksplorowania.
-          </p>
-          <p class="event">
-            Miejskie eksplorowanie: Halo! Gdzie jest sztuka w przestrzeni
-            publicznej? to wirtualny spacer po sztuce w przestrzeni publicznej w
-            Polsce. Pomoc w przenoszeniu się z miejsca do miejsca prędkością
-            światła zapewni street view map google. Poprowadzi tą podróż
-            Aleksandra Litorowicz z Fundacji Puszka.
-          </p>
-          <p class="event">
-            Prowadzenie: Aleksandra Litorowicz (Fundacja Puszka)<br />
-            prezeska Fundacji Puszka, kulturoznawczyni, badaczka, twórczyni
-            portalu o warszawskim street arcie i sztuce w przestrzeni publicznej
-            PUSZKA, konkursu dla Warszawy przyszłości FUTUWAWA oraz portalu
-            edukacyjnego sztukapubliczna.pl. Współzałożycielka Szkoły
-            Architektury Społeczności SAS. Współautorka wielu projektów
-            badawczych, wykładowczyni semestru miejskiego School of Ideas w
-            SWPS, współpracowniczka „Magazynu Miasta” i „Notesu na 6 tygodni”.
-            Przez wiele lat współpracowała z Instytutem Badań Przestrzeni
-            Publicznej ASP w Warszawie i wykładała na studiach miejskich Miasta
-            i Metropolie. Kierowniczka ogólnopolskiego badania malarstwa
-            monumentalnego oraz trzyletniego projektu badawczego „Place Warszawy
-            (do odzyskania)”. Stypendystka Ministra Kultury i Dziedzictwa
-            Narodowego.
-          </p>
-          <div class="modal-video">
-            <iframe
-              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fantyrama%2Fvideos%2F342155547219721%2F&show_text=0&width=560"
-              width="560"
-              height="315"
-              style="margin: 0 auto; border: none; overflow: hidden"
-              scrolling="no"
-              frameborder="0"
-              allowTransparency="true"
-              allowfullscreen="true"
-            ></iframe>
-          </div>
+<body>
+  <header class="video-header">
+    <video src="./media/header.mp4" autoplay loop muted></video>
+    <i class="arrow-down"></i>
+  </header>
+  <main>
+    <h1>Festiwal</h1>
+    <p class="description">
+      Nazywamy się Fundacja Antyrama i już od niemalże 10 lat próbujemy
+      sprawiać, żeby w miastach żyło się lepiej. Robimy to między innymi
+      poprzez warsztaty, instalacje, wykłady, wydarzenia kulturalne. Naszym
+      najbardziej rozpoznawalnym wydarzeniem jest A&lt;24 - 24-godzinny
+      maraton projektowy, podczas którego uczestnicy pracują na realnych
+      problemach, starając się osiągnąć jak najbardziej uniwersalne efekty.
+    </p>
+    <p class="description">
+      Od trzech lat organizujemy również A&lt;FESTIVAL - festiwal twórców
+      przestrzeni miejskiej Wszystkie wydarzenia, takie jak warsztaty,
+      prelekcje, koncerty, imprezy, wykłady, dyskusje i spacery mają na celu
+      poszerzanie horyzontów uczestników, obalanie stereotypów i edukację
+      kulturalną.
+    </p>
+    <p class="description">
+      Ze względu na wyjątkową sytuację w tym roku postanowiliśmy przenieść
+      nasz festiwal w sferę online i zmienić nasz temat przewodni (co roku
+      dobierany w nawiązaniu do aktualnych trendów, problemów i wyzwań
+      miejskich) na KRYZYS. Chcemy jednak odejść od wszechobecnej już tematyki
+      wirusa i skupić się na innych problemach z jakimi borykają się miasta,
+      na czele z globalnym ociepleniem, rozlewaniem się miasta, chaosie
+      przestrzennym, psychologii miasta i wielu innych. Festiwal rozciągnięty
+      będzie na cały miesiąc październik.
+    </p>
+
+    <h1>Wydarzenia</h1>
+    <div class="calendar">
+      <ul class="seven-grid weekdays">
+        <li>
+          <abbr title="M">PONIEDZIAŁEK</abbr>
+        </li>
+        <li>
+          <abbr title="T">WTOREK</abbr>
+        </li>
+        <li>
+          <abbr title="W">ŚRODA</abbr>
+        </li>
+        <li>
+          <abbr title="T">CZWARTEK</abbr>
+        </li>
+        <li>
+          <abbr title="F">PIĄTEK</abbr>
+        </li>
+        <li>
+          <abbr title="S">SOBOTA</abbr>
+        </li>
+        <li>
+          <abbr title="S">NIEDZIELA</abbr>
+        </li>
+      </ul>
+
+      <ul class="seven-grid day-grid" id="calendar">
+        <li class="day with-modal" onclick="openModal(28)">
+          <div class="number">28</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(29)">
+          <div class="number">29</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(30)">
+          <div class="number">30</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(1)">
+          <div class="number">1</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(2)">
+          <div class="number">2</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(3)">
+          <div class="number">3</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(4)">
+          <div class="number">4</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(5)">
+          <div class="number">5</div>
+          <div class="title">spacer 1/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(6)">
+          <div class="number">6</div>
+          <div class="title">MIASTORANEK<br />Kiosk Umiejętności 1/4</div>
+        </li>
+        <li class="day" onclick="openModal(7)">
+          <div class="number">7</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(8)">
+          <div class="number">8</div>
+          <div class="title">Pobudki<br />urban drink 1/4</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(9)">
+          <div class="number">9</div>
+          <div class="title">A&lt;SYMETRIE 1/2</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(10)">
+          <div class="number">10</div>
+          <div class="title">skill lab 1/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(11)">
+          <div class="number">11</div>
+          <div class="title">perfo 1/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(12)">
+          <div class="number">12</div>
+          <div class="title">spacer 2/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(13)">
+          <div class="number">13</div>
+          <div class="title">MIASTORANEK<br />Kiosk Umiejętności 2/4</div>
+        </li>
+        <li class="day" onclick="openModal(14)">
+          <div class="number">14</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(15)">
+          <div class="number">15</div>
+          <div class="title">Pobudki<br />urban drink 2/4</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(16)">
+          <div class="number">16</div>
+          <div class="title">plug in</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(17)">
+          <div class="number">17</div>
+          <div class="title">skill lab 2/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(18)">
+          <div class="number">18</div>
+          <div class="title">perfo 2/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(19)">
+          <div class="number">19</div>
+          <div class="title">spacer 3/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(20)">
+          <div class="number">20</div>
+          <div class="title">MIASTORANEK<br />Kiosk Umiejętności 3/4</div>
+        </li>
+        <li class="day" onclick="openModal(21)">
+          <div class="number">21</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(22)">
+          <div class="number">22</div>
+          <div class="title">Pobudki<br />urban drink 3/4</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(23)">
+          <div class="number">23</div>
+          <div class="title">A&lt;SYMETRIE 2/2</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(24)">
+          <div class="number">24</div>
+          <div class="title">A&lt;24 ONLINE</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(25)">
+          <div class="number">25</div>
+          <div class="title">perfo 3/3</div>
+        </li>
+        <li class="day" onclick="openModal(26)">
+          <div class="number">26</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(27)">
+          <div class="number">27</div>
+          <div class="title">MIASTORANEK<br />Kiosk Umiejętności 4/4</div>
+        </li>
+        <li class="day" onclick="openModal(28)">
+          <div class="number">28</div>
+          <div class="title"></div>
+        </li>
+        <li class="day with-modal" onclick="openModal(29)">
+          <div class="number">29</div>
+          <div class="title">Pobudki<br />urban drink 4/4</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(30)">
+          <div class="number">30</div>
+          <div class="title">Miejska Loża</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(31)">
+          <div class="number">31</div>
+          <div class="title">skill lab 3/3</div>
+        </li>
+        <li class="day with-modal" onclick="openModal(1)">
+          <div class="number">1</div>
+          <div class="title"></div>
+        </li>
+      </ul>
+    </div>
+    <div id="day5" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          spacer 1/3 | miejskie eksplorowanie: Halo! Gdzie jest sztuka w
+          przestrzeni publicznej?
+        </h3>
+        <p class="event">
+          Nowy mural, instalacja w przejściu podziemnym, świecący neon, ogromna maskotka czy dziwny obiekt uwięziony w
+          gałęziach drzew - te widoki dobrze znamy z mediów społecznościowych. Czasami podczas codziennej miejskiej
+          rutyny zostajemy pozytywnie zaskoczeni albo... zbulwersowani. Street art jest wszędzie wokół, ale konkretnie:
+          gdzie? Gdzie go szukać, po co powstaje i jakie ma znaczenie dowiemysię w ramach miejskiego eksplorowania.
+        </p>
+        <p class="event">
+          Miejskie eksplorowanie: Halo! Gdzie jest sztuka w przestrzeni publicznej? to wirtualny spacer po sztuce w
+          przestrzeni publicznej w Polsce. Pomoc w przenoszeniu się z miejsca do miejsca prędkością światła zapewni
+          street view map google. Poprowadzi tą podróż
+          Aleksandra Litorowicz z Fundacji Puszka.
+        </p>
+        <p class="event">
+          <strong>Prowadzenie: Aleksandra Litorowicz (Fundacja Puszka)</strong><br />
+          Prezeska Fundacji Puszka, kulturoznawczyni, badaczka, twórczyni portalu o warszawskim street arcie i sztuce w
+          przestrzeni publicznej PUSZKA, konkursu dla Warszawy przyszłości FUTUWAWA oraz portalu edukacyjnego
+          sztukapubliczna.pl. Współzałożycielka Szkoły Architektury Społeczności SAS. Współautorka wielu projektów
+          badawczych, wykładowczyni semestru miejskiego School of Ideas w SWPS, współpracowniczka „Magazynu Miasta” i
+          „Notesu na 6 tygodni”. Przez wiele lat współpracowała z Instytutem Badań Przestrzeni Publicznej ASP w
+          Warszawie i wykładała na studiach miejskich Miasta
+          i Metropolie. Kierowniczka ogólnopolskiego badania malarstwa monumentalnego oraz trzyletniego projektu
+          badawczego „Place Warszawy (do odzyskania)”. Stypendystka Ministra Kultury i Dziedzictwa Narodowego.
+        </p>
+        <div class="modal-video">
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fantyrama%2Fvideos%2F342155547219721%2F&show_text=0&width=560"
+            width="560" height="315" style="margin: 0 auto; border: none; overflow: hidden" scrolling="no"
+            frameborder="0" allowTransparency="true" allowfullscreen="true"></iframe>
         </div>
       </div>
-      <div id="day6" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            Street Cloud [MIASTORANEK] - Magdalena Milert | Kiosk Umiejętności 1/4: Oddychaj i czuj
-          </h3>
-          <h4>
-            Street Cloud [MIASTORANEK] - Magdalena Milert
-          </h4>
-          <p class="event">
-            Opis wkrótce...
-          </p>
-          <h4>
-           Kiosk Umiejętności 1/4: Oddychaj i czuj
-          </h4>
-          <p class="event">
-           W poszukiwaniu optymalnego zdrowia wielu ludzi decyduje się na wypróbowanie medycyny alternatywnej.  Nieodłączną tego częścią jest holistyczne podejście do zdrowia, czyli postrzeganie człowieka jako integralną całość, na którą składa się ciało, umysł i duch. Czujemy to wszyscy w mniejszym lub większym stopniu… To energia która nas otacza, którą jesteśmy.
-          </p>
-          <p class="event">
-           Warsztaty dotyczą zagadnień związanych z uważnością w życiu codziennym na byciu tu i teraz, na oddechu, czuciu siebie, swoich emocji, obserwowaniu oddziaływania emocji na nasze ciało. W ramach wydarzenia odbędzie się krótka medytacja, która pomaga w skupieniu się na naszym wnętrzu – tak zwanym polu serca.
-          </p>
-           <p class="event">
-           Małgorzata Kalyciok<br />
-           Ukończyła studia podyplomowe na kierunku ajurweda w GWSH w Katowicach, liczne kursy, szkolenia jak np. z MSP /Metodyka Strategiczna Polistymulacji - to odłam dźwiekoterapii, bazującej na użyciu instrumentów terapeutycznych takich jak: gongi i misy grające. Bierze udział w różnych warsztatach rozwojowych pozwalających mi na odkrywanie człowieka, jego
-           funkcjonowanie i lepsze zrozumienie ludzkiej natury. Przede wszystkim jest praktykiem, kocha życie jego przejawy w różnych odsłonach i z tym pragnie się dzielić z ludźmi.
-          </p>
-        </div>
-      </div>
-      <div id="day8" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            Street Cloud [Pobudki] | urban drink 1/4: miejska partycypacja narodowa
-          </h3>
-          <h4>
-          Street Cloud [Pobudki]
-          </h4>
-          <p class="event">
-            Opis wkrótce...
-          </p>
-          <h4>
-          urban drink: miejska partycypacja narodowa
-          </h4>
-          <p class="event">
-           “Obywatelko! Obywatelu! Czas wziąć sprawy w swoje ręce i mieć realny wpływ na działania wybieranych przez nas przedstawicielek i przedstawicieli do parlamentu, samorządów i organów publicznych.” Tymi słowami zaczyna się prawie każdy partyjny manifest. A gdyby tak naprawdę postąpić? Mobilizować się nie tylko w momentach negatywnych, prowadzić otwarty dialog z naszymi władzami, wypracować mechanizmy współdecydowania o kierunkach działania państwa oraz jego budżecie. Brzmi nierealnie, ale… od czegoś trzeba zacząć!
-          </p>
-          <p class="event">
-           Urban drink: miejska partycypacja narodowa to swobodne spotkanie online o nieformalnym charakterze na tematy związane z kulturą miejską. Rozmawiać będą: Hanna Gill-Piątek, Natalia Klamann i Kuba Wątły. Poprowadzi rozmowę Klaudia Mańka.
-          </p>
-          <p class="event">
-          Hanna Gill-Piątek<br />
-          Łodzianka, aktywistka miejska, społeczniczka. 
-          Od 2005 roku działa w ruchach miejskich, jest związana z Partią Zielonych, członkini Kongresu Ruchów Miejskich. W latach 2011–2014 prowadziła Świetlicę Krytyki Politycznej w Łodzi. Należy do Polska 2050 Szymona Hołowni. Ekspertka samorządowa, przygotowała Łódź do rewitalizacji kierując ministerialnym projektem. Publikowała stałe felietony w Gazecie Wyborczej, Przekroju i Dzienniku Łódzkim. W 2010 wspólnie z Henryką Krzywonos napisała książkę “Bieda.   Przewodnik dla dzieci”, za którą nominowano ją do Okularów Równości. Członkini Rady Programowej Kongresu Kobiet. 
-          </p>
-          <p class="event">
-          Natalia Klamann<br />
-          ... 
-          </p>
-          <p class="event">
-          Kuba Wątły<br />
-          ... 
-          </p>
-        </div>
-      </div>
-              <div id="day9" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-          A&lt;SYMETRIE 1/2: własna/wspólna przestrzeń
-          </h3>
-          <p class="event">
-            Publiczne to znaczy niczyje, prywatne - nie wiadomo kogo. Kogo nigdy nie irytował sypiący się prywatny pustostan lub rozwijający się miejski chodnik? Codziennie świadomie lub nie przemieszczamy się pomiędzy tym, co wspólne, a tym co nie nasze.
-            Modeli zarządzania miastem, przestrzenią i budynkami jest wiele. Jednak w naszej kulturze oparte są o model kapitalistyczny, w którym własność prywatna jest rzeczą świętą. A gdyby tak zrewolucjonizować myślenie o własności? Czyje wtedy powinny być nieruchomości?
-          </p>
-          <p class="event">
-            A&lt;SYMETRIE: własna/wspólna przestrzeń to hybryda wykładu, dyskusji i luźnej rozmowy ograniczona w czasie do 60 minut w formie online. Zmieńmy wspólnie nasze miasta i zacznijmy rozmawiać o nowej rzeczywistości. 
-          </p>
-          <p class="event">
-          Adam Polko<br />
-          ... 
-          </p>
-          <p class="event">
-          Beniamin Łuczyński<br />
-          Absolwent SGH i Ślązak. Z doświadczeniem w administracji publicznej oraz konsultingu miejskim i środowiskowym. Koordynował inicjatywę powołania Warszawskiego Panelu Klimatycznego. Inicjator fundacji Pracownia Zmiany i rzecznik prasowy Miasto Jest Nasze. Ćwiczy kalistenikę, jest  morsem i całorocznym rowerzystą.
-          </p>
-          <p class="event">
-          Maciej Folta<br />
-          ... 
-          </p>
-        </div>
-      </div>
-              <div id="day10" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            skill lab 1/3: zdalnie - lokalnie
-          </h3>
-          <p class="event">
-            Opis wkrótce...
-          </p>
-        </div>
-      </div>
-              <div id="day11" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            performance 1/3: Pasiewicz
-          </h3>
-          <p class="event">
-            Opis wkrótce...
-          </p>
-        </div>
-      </div>
-              <div id="day12" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            spacer 2/3 | miejskie eksplorowanie: Kryzys, który zmienił Łódź
-          </h3>
-          <p class="event">
-            Są takie miasta, których potencjał ciężko dostrzec na pierwszy rzut oka, miasta “tylko dla wtajemniczonych”, miasta, które potrzebują czasu, żeby odsłonić przed nami swoje tajemnice. Łódź jest właśnie takim miastem - jedną nogą powłóczy w przeszłości, drugą stąpa odważnie w przyszłość. Jest tajemnicza, zaskakująca i pełna kontrastów. Taki właśnie będzie ten spacer. 
-          </p>
-          <p class="event">
-            Miejskie eksplorowanie: Kryzys, który zmienił Łódź to wirtualny spacer po historycznych miejscach Łodzi związanych z przemysłem włókienniczym. Pomoc w przenoszeniu się z miejsca do miejsca z prędkością światła zapewni street view map google. Podróż poprowadzi Kajetan Stobiecki.
-          </p>
-          <p class="event">
-            Prowadzenie: Kajetan Stobiecki<br />
-            historyk i urzędnik, przewodnik po Łodzi. Zafascynowany strukturą urbanistyczno-architektoniczną miasta przemysłowego i jej konsekwencjami społecznymi. Dumny potomek pracownic łódzkich zakładów włókienniczych Uniontex i Feniks.
-          </p>
-        </div>
-      </div>
-              <div id="day13" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-          Street Cloud [MIASTORANEK] | Kiosk Umiejętności 2/4: Nowe życie
-          </h3>
-          <h4>
+    </div>
+    <div id="day6" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          Street Cloud [MIASTORANEK] | Kiosk Umiejętności 1/4: Oddychaj i czuj
+        </h3>
+        <h4>
           Street Cloud [MIASTORANEK]
-          </h4>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <h4>
-           Kiosk Umiejętności 2/4: Nowe życie
-          </h4>
-          <p class="event">
-           Nowe życie - ze starych rzeczy, zrób nowe. Stwórz stylowe ubrania z tego co masz pod ręką. Holy Spells pokazuje jak ze starych rzeczy, ubrań, znalezisk, prosto i pomysłowo stworzyć coś wyjątkowego. Materiały poddane ręcznej, ale zarazem prostej obróbce z odważną koncepcją i wizją.
-          </p>
-          <p class="event">
-           Podczas warsztatów zostanie zaprezentowana szafa HOLY SPELLS oraz zostaną zdradzone pomysły z zakresu projektowania i obróbki, by nikt już nigdy nie bał się stworzyć coś szalonego i indywidualnego dla siebie.
-          </p>
-           <p class="event">
-           HOLLY SPELLS<br />
-           Netali Vellow, Odri Vellow, czyli dwie siostry z Ukrainy, mieszkające w
-           Polsce od 6 lat. Zajmują się muzyką, pod zespołem VELLOW, tworzą filmy pod nazwą
-           LUCID film company oraz projektują i wykonują ubrania jako Holy Spells. Marka ta
-           kierowana jest dla świadomych i pewnych siebie ludzi. Materiały z second-hand,
-           poddaje się recyklingowi i nadaje się im nowego życia. Produkty wykonywane są w
-           całości ręcznie, nie wykonywane są kopie, więc każda rzecz w kolekcji jest wyjątkowa.
-          </p>
-        </div>
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          Kiosk Umiejętności: Oddychaj i czuj
+        </h4>
+        <p class="event">
+          W poszukiwaniu optymalnego zdrowia wielu ludzi decyduje się na wypróbowanie medycyny alternatywnej.
+          Nieodłączną tego częścią jest holistyczne podejście do zdrowia, czyli postrzeganie człowieka jako integralną
+          całość, na którą składa się ciało, umysł i duch. Czujemy to wszyscy w mniejszym lub większym stopniu… To
+          energia która nas otacza, którą jesteśmy.
+        </p>
+        <p class="event">
+          Warsztaty dotyczą zagadnień związanych z uważnością w życiu codziennym na byciu tu i teraz, na oddechu, czuciu
+          siebie, swoich emocji, obserwowaniu oddziaływania emocji na nasze ciało. W ramach wydarzenia odbędzie się
+          krótka medytacja, która pomaga w skupieniu się na naszym wnętrzu – tak zwanym polu serca.
+        </p>
+        <p class="event">
+          <strong>Prowadzenie: Małgorzata Kalyciok</strong><br />
+          Ukończyła studia podyplomowe na kierunku ajurweda w GWSH w Katowicach, liczne kursy, szkolenia jak np. z MSP
+          /Metodyka Strategiczna Polistymulacji - to odłam dźwiekoterapii, bazującej na użyciu instrumentów
+          terapeutycznych takich jak: gongi i misy grające. Bierze udział w różnych warsztatach rozwojowych
+          pozwalających mi na odkrywanie człowieka, jego funkcjonowanie i lepsze zrozumienie ludzkiej natury. Przede
+          wszystkim jest praktykiem, kocha życie jego przejawy w różnych odsłonach i z tym pragnie się dzielić z ludźmi.
+        </p>
       </div>
-              <div id="day15" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-          Street Cloud [Pobudki] | urban drink 2/4: kryzys miasta jako maszyny
-          </h3>
-          <h4>
+    </div>
+    <div id="day8" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          Street Cloud [Pobudki] | urban drink 1/4: miejska partycypacja narodowa
+        </h3>
+        <h4>
           Street Cloud [Pobudki]
-          </h4>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <h4>
-          urban drink 2/4: kryzys miasta jako maszyny
-          </h4>
-          <p class="event">
-          Wielu marzyło o automatyzacji naszych miast. Dla niektórych sposobem na to było strefowanie funkcji, dla innych wprowadzenie na agendę idei smart cities, nieliczni zakładają przepełnione najnowszymi technologiami miejskie startupy. Jednak przyszłość obszarów zurbanizowanych składa się z miliarda zmiennych, w których tylko część da się przewidzieć. Jak je wszystkie okiełznać w obliczu kryzysów klimatycznych, pandemicznych i ekonomicznych? Jedno jest pewne. Miasto to nie komputer. 
-          </p>
-          <p class="event">
-          Urban drink: kryzys miasta jako maszyny to luźne spotkanie online o nieformalnym charakterze na tematy związane z kulturą miejską. Rozmawiać będą: Paulina Grabowska, Justyna Biernacka i Krzysztof Nawratek. Rozmowę poprowadzi Klaudia Mańka.
-          </p>
-          <p class="event">
-          Krzysztof Nawratek<br />
-          Wykłada na wydziale Architektury w The University of Sheffield. Jest autorem wielu artykułów i książek, między innymi ‘Miasto jako idea polityczna’ (2008), ‘Total Urban Mobilisation. Ernst Junger and the Post-capitalist city’ (2018) i Kuala Lumpur: Community, Infrastructure and Urban Inclusivity (2020).
-          </p>
-          <p class="event">
-          Paulina Grabowska<br />
-          Projektantka innowacji w zakresie zrównoważonego rozwoju. Uważa, że najcenniejsze, a zarazem najmniej wykorzystywane zasoby na Ziemi to różnego rodzaju zanieczyszczenia. W swoim studio NAS-DRA Conscious Design bada oraz projektuje schematy gospodarki o obiegu zamkniętym, procesy łagodzenia zmian klimatu, a także miejskie farmy. Jest także wykładowczynią w School of Form. 
-          </p>
-          <p class="event">
-          Justyna Biernacka<br />
-          ... 
-          </p>
-        </div>
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          urban drink: miejska partycypacja narodowa
+        </h4>
+        <p class="event">
+          “Obywatelko! Obywatelu! Czas wziąć sprawy w swoje ręce i mieć realny wpływ na działania wybieranych przez nas
+          przedstawicielek i przedstawicieli do parlamentu, samorządów i organów publicznych.” Tymi słowami zaczyna się
+          prawie każdy partyjny manifest. A gdyby tak naprawdę postąpić? Mobilizować się nie tylko w momentach
+          negatywnych, prowadzić otwarty dialog z naszymi władzami, wypracować mechanizmy współdecydowania o kierunkach
+          działania państwa oraz jego budżecie. Brzmi nierealnie, ale… od czegoś trzeba zacząć!
+        </p>
+        <p class="event">
+          Urban drink: miejska partycypacja narodowa to swobodne spotkanie online o nieformalnym charakterze na tematy
+          związane z kulturą miejską. Rozmawiać będą: Hanna Gill-Piątek, Natalia Klamann i Kuba Wątły. Poprowadzi
+          rozmowę Klaudia Mańka.
+        </p>
+        <p class="event">
+          <strong>Gość: Hanna Gill-Piątek</strong><br />
+          Łodzianka, aktywistka miejska, społeczniczka.
+          Od 2005 roku działa w ruchach miejskich, jest związana z Partią Zielonych, członkini Kongresu Ruchów
+          Miejskich. W latach 2011–2014 prowadziła Świetlicę Krytyki Politycznej w Łodzi. Należy do Polska 2050 Szymona
+          Hołowni. Ekspertka samorządowa, przygotowała Łódź do rewitalizacji kierując ministerialnym projektem.
+          Publikowała stałe felietony w Gazecie Wyborczej, Przekroju i Dzienniku Łódzkim. W 2010 wspólnie z Henryką
+          Krzywonos napisała książkę “Bieda. Przewodnik dla dzieci”, za którą nominowano ją do Okularów Równości.
+          Członkini Rady Programowej Kongresu Kobiet.
+        </p>
+        <p class="event">
+          <strong>Gość: Natalia Klamann</strong><br />
+          Opis bio wkrótce...
+        </p>
+        <p class="event">
+          <strong>Gość: Kuba Wątły</strong><br />
+          Opis bio wkrótce...
+        </p>
       </div>
-              <div id="day16" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
+    </div>
+    <div id="day9" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          A&lt;SYMETRIE 1/2: własna/wspólna przestrzeń
+        </h3>
+        <p class="event">
+          Publiczne to znaczy niczyje, prywatne - nie wiadomo kogo. Kogo nigdy nie irytował sypiący się prywatny
+          pustostan lub rozwijający się miejski chodnik? Codziennie świadomie lub nie przemieszczamy się pomiędzy tym,
+          co wspólne, a tym co nie nasze.
+          Modeli zarządzania miastem, przestrzenią i budynkami jest wiele. Jednak w naszej kulturze oparte są o model
+          kapitalistyczny, w którym własność prywatna jest rzeczą świętą. A gdyby tak zrewolucjonizować myślenie o
+          własności? Czyje wtedy powinny być nieruchomości?
+        </p>
+        <p class="event">
+          A&lt;SYMETRIE: własna/wspólna przestrzeń to hybryda wykładu, dyskusji i luźnej rozmowy ograniczona w czasie do
+          60 minut w formie online. Zmieńmy wspólnie nasze miasta i zacznijmy rozmawiać o nowej rzeczywistości.
+        </p>
+        <p class="event">
+          <strong>Gość: Adam Polko</strong><br />
+          Opis bio wkrótce...
+        </p>
+        <p class="event">
+          <strong>Gość: Beniamin Łuczyński</strong><br />
+          Absolwent SGH i Ślązak. Z doświadczeniem w administracji publicznej oraz konsultingu miejskim i środowiskowym.
+          Koordynował inicjatywę powołania Warszawskiego Panelu Klimatycznego. Inicjator fundacji Pracownia Zmiany i
+          rzecznik prasowy Miasto Jest Nasze. Ćwiczy kalistenikę, jest morsem i całorocznym rowerzystą.
+        </p>
+        <p class="event">
+          <strong>Gość: Maciej Folta</strong><br />
+          Opis bio wkrótce...
+        </p>
+      </div>
+    </div>
+    <div id="day10" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          skill lab 1/3: zdalnie - lokalnie
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+          <p class="event">
+          Rejestracja kończy się <u>xxx</u>, wyniki zostaną ogłoszone <u>xxx</u>.<br />
+          <strong><span style="color: red">Rejestracja: <a class="registration" href="link">link</a></span></strong>
+        </p>
+      </div>
+    </div>
+    <div id="day11" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          performance 1/3: Pasiewicz
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+      </div>
+    </div>
+    <div id="day12" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          spacer 2/3 | miejskie eksplorowanie: Kryzys, który zmienił Łódź
+        </h3>
+        <p class="event">
+          Są takie miasta, których potencjał ciężko dostrzec na pierwszy rzut oka, miasta “tylko dla wtajemniczonych”,
+          miasta, które potrzebują czasu, żeby odsłonić przed nami swoje tajemnice. Łódź jest właśnie takim miastem -
+          jedną nogą powłóczy w przeszłości, drugą stąpa odważnie w przyszłość. Jest tajemnicza, zaskakująca i pełna
+          kontrastów. Taki właśnie będzie ten spacer.
+        </p>
+        <p class="event">
+          Miejskie eksplorowanie: Kryzys, który zmienił Łódź to wirtualny spacer po historycznych miejscach Łodzi
+          związanych z przemysłem włókienniczym. Pomoc w przenoszeniu się z miejsca do miejsca z prędkością światła
+          zapewni street view map google. Podróż poprowadzi Kajetan Stobiecki.
+        </p>
+        <p class="event">
+          <strong>Prowadzenie: Kajetan Stobiecki</strong><br />
+          Historyk i urzędnik, przewodnik po Łodzi. Zafascynowany strukturą urbanistyczno-architektoniczną miasta
+          przemysłowego i jej konsekwencjami społecznymi. Dumny potomek pracownic łódzkich zakładów włókienniczych
+          Uniontex i Feniks.
+        </p>
+      </div>
+    </div>
+    <div id="day13" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          Street Cloud [MIASTORANEK] | Kiosk Umiejętności 2/4: Nowe życie
+        </h3>
+        <h4>
+          Street Cloud [MIASTORANEK]
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          Kiosk Umiejętności: Nowe życie
+        </h4>
+        <p class="event">
+          Nowe życie - ze starych rzeczy, zrób nowe. Stwórz stylowe ubrania z tego co masz pod ręką. Holy Spells
+          pokazuje jak ze starych rzeczy, ubrań, znalezisk, prosto i pomysłowo stworzyć coś wyjątkowego. Materiały
+          poddane ręcznej, ale zarazem prostej obróbce z odważną koncepcją i wizją.
+        </p>
+        <p class="event">
+          Podczas warsztatów zostanie zaprezentowana szafa Holy Spells oraz zostaną zdradzone pomysły z zakresu
+          projektowania i obróbki, by nikt już nigdy nie bał się stworzyć coś szalonego i indywidualnego dla siebie.
+        </p>
+        <p class="event">
+          <strong>Prowadzenie: Holly Spells</strong><br />
+          Netali Vellow, Odri Vellow, czyli dwie siostry z Ukrainy, mieszkające w
+          Polsce od 6 lat. Zajmują się muzyką, pod zespołem VELLOW, tworzą filmy pod nazwą
+          LUCID film company oraz projektują i wykonują ubrania jako Holy Spells. Marka ta
+          kierowana jest dla świadomych i pewnych siebie ludzi. Materiały z second-hand,
+          poddaje się recyklingowi i nadaje się im nowego życia. Produkty wykonywane są w
+          całości ręcznie, nie wykonywane są kopie, więc każda rzecz w kolekcji jest wyjątkowa.
+        </p>
+      </div>
+    </div>
+    <div id="day15" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          Street Cloud [Pobudki] | urban drink 2/4: kryzys miasta jako maszyny
+        </h3>
+        <h4>
+          Street Cloud [Pobudki]
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          urban drink: kryzys miasta jako maszyny
+        </h4>
+        <p class="event">
+          Wielu marzyło o automatyzacji naszych miast. Dla niektórych sposobem na to było strefowanie funkcji, dla
+          innych wprowadzenie na agendę idei smart cities, nieliczni zakładają przepełnione najnowszymi technologiami
+          miejskie startupy. Jednak przyszłość obszarów zurbanizowanych składa się z miliarda zmiennych, w których tylko
+          część da się przewidzieć. Jak je wszystkie okiełznać w obliczu kryzysów klimatycznych, pandemicznych i
+          ekonomicznych? Jedno jest pewne. Miasto to nie komputer.
+        </p>
+        <p class="event">
+          Urban drink: kryzys miasta jako maszyny to luźne spotkanie online o nieformalnym charakterze na tematy
+          związane z kulturą miejską. Rozmawiać będą: Paulina Grabowska, Justyna Biernacka i Krzysztof Nawratek. Rozmowę
+          poprowadzi Klaudia Mańka.
+        </p>
+        <p class="event">
+          <strong>Gość:Krzysztof Nawratek</strong><br />
+          Wykłada na wydziale Architektury w The University of Sheffield. Jest autorem wielu artykułów i książek, między
+          innymi ‘Miasto jako idea polityczna’ (2008), ‘Total Urban Mobilisation. Ernst Junger and the Post-capitalist
+          city’ (2018) i Kuala Lumpur: Community, Infrastructure and Urban Inclusivity (2020).
+        </p>
+        <p class="event">
+          <strong>Gość: Paulina Grabowska</strong><br />
+          Projektantka innowacji w zakresie zrównoważonego rozwoju. Uważa, że najcenniejsze, a zarazem najmniej
+          wykorzystywane zasoby na Ziemi to różnego rodzaju zanieczyszczenia. W swoim studio NAS-DRA Conscious Design
+          bada oraz projektuje schematy gospodarki o obiegu zamkniętym, procesy łagodzenia zmian klimatu, a także
+          miejskie farmy. Jest także wykładowczynią w School of Form.
+        </p>
+        <p class="event">
+          <strong>Gość: Justyna Biernacka</strong><br />
+          Opis bio wkrótce...
+        </p>
+      </div>
+    </div>
+    <div id="day16" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
           plug in party
-          </h3>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-        </div>
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
       </div>
-              <div id="day17" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
+    </div>
+    <div id="day17" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
           skill lab 2/3: creative coding
-          </h3>
-          <p class="event">
-          There are no limits to the power of code and fantasy. Everything imagined can be transferred into lines of commands, which then create a stimulating visual picture. Creative coding includes the possibility of creating live visuals, installation environments, projection mapping, graphics, data visualization, art, advertising and much more.
-          </p>
-          <p class="event">
-          The purpose of the workshop is to create something expressive and communicative while learning basic programming techniques using p5.js. The workshop is entry level, and will teach the basics of programming and computer graphics, and give an insight into the history of creative coding.
-          </p>
-          <p class="event">
-          The registration ends on the 10th of October, results will be announced on the 11th of October
-          Apply here: link
-          </p>
-          <p class="event">
-          Workshop date<br />
+        </h3>
+        <p class="event">
+          There are no limits to the power of code and fantasy. Everything imagined can be transferred into lines of
+          commands, which then create a stimulating visual picture. Creative coding includes the possibility of creating
+          live visuals, installation environments, projection mapping, graphics, data visualization, art, advertising
+          and much more.
+        </p>
+        <p class="event">
+          The purpose of the workshop is to create something expressive and communicative while learning basic
+          programming techniques using p5.js. The workshop is entry level, and will teach the basics of programming and
+          computer graphics, and give an insight into the history of creative coding.
+        </p>
+        <p class="event">
+          The registration ends on the <u>10th of October</u>, results will be announced on the <u>11th of October</u>.<br />
+          <strong><span style="color: red">Apply here: <a class="registration" href="http://bit.ly/afestival20workshop">http://bit.ly/afestival20workshop</a></span></strong>
+        </p>
+        <p class="event">
+          <strong>Workshop date</strong><br />
           date: 17-18.10.2020<br />
           hours: 15.00 - 19.00 (2 days)<br />
-          </p>
-          <p class="event">
-          Leading: Luca Scarlatta<br />
-          Born in Cagliari, Italy, in 1989. He graduated from Istituto Europeo di Design, where he now teaches 'Creative Coding e Multimedia Languages'. His work, as an artist and an educator, focuses on visual art and interactive systems, new technologies and programming languages. Luca also works as a consultant for companies, both public and private, and creative studios.
-          </p>
-        </div>
+        </p>
+        <p class="event">
+          <strong>Leading: Luca Scarlatta</strong><br />
+          Born in Cagliari, Italy in 1989. He graduated from Istituto Europeo di Design, where he now teaches 'Creative
+          Coding e Multimedia Languages'. His work, as an artist and an educator, focuses on visual art and interactive
+          systems, new technologies and programming languages. Luca also works as a consultant for companies, both
+          public and private, and creative studios.
+        </p>
+        <p class="event">
+          <strong>Facebook event: <a href="https://www.facebook.com/events/340138123752411/?acontext=%7B%22source%22%3A5%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%5C%22[]%5C%22%22%7D]%2C%22has_source%22%3Atrue%7D">Skill lab online: creative coding [workshop]</a></strong>
+        </p>
       </div>
-              <div id="day18" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            performance 2/3: Piechnicznek
-          </h3>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-        </div>
+    </div>
+    <div id="day18" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          performance 2/3: Piechnicznek
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
       </div>
-              <div id="day19" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            spacer 3/3 | miejskie eksplorowanie: Niekończąca się opowieść o Katowicach/Gliwicach
-          </h3>
-          <p class="event">
-            Opis wkrótce...
-          </p>
-        </div>
+    </div>
+    <div id="day19" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          spacer 3/3 | miejskie eksplorowanie: Niekończąca się opowieść o Katowicach/Gliwicach
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
       </div>
-              <div id="day20" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-          Street Cloud [MIASTORANEK] | Kiosk Umiejętności 3/4: jedz i wiedz
-          </h3>
-          <h4>
+    </div>
+    <div id="day20" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          Street Cloud [MIASTORANEK] | Kiosk Umiejętności 3/4: Jedz i wiedz
+        </h3>
+        <h4>
           Street Cloud [MIASTORANEK]
-          </h4>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <h4>
-           Kiosk Umiejętności 3/4: jedz i wiedz
-          </h4>
-          <p class="event">
-           Opis wkrótce...
-          </p> 
-        </div>
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          Kiosk Umiejętności: Jedz i wiedz
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
       </div>
-              <div id="day22" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
+    </div>
+    <div id="day22" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
           Street Cloud [Pobudki] | urban drink 3/4: miejska radość w kryzysie
-          </h3>
-          <h4>
+        </h3>
+        <h4>
           Street Cloud [Pobudki]
-          </h4>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <h4>
-          urban drink 3/4: miejska radość w kryzysie
-          </h4>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <p class="event">
-          Urban drink: miejska radość w kryzysie to swobodne spotkanie online o nieformalnym charakterze na tematy związane z kulturą miejską. Rozmawiać będą: Katarzyna Kajdanek, Agata Twardoch, Zuzanna Kasperczyk. Rozmowę poprowadzi Klaudia Mańka.
-          </p>
-          <p class="event">
-          Katarzyna Kajdanek<br />
-          ...
-          </p>
-          <p class="event">
-          Agata Twardoch<br />
-          Architektka i urbanistka związana z Wydziałem Architektury Politechniki Śląskiej, członkini Towarzystwa Urbanistów Polskich. Współprowadzi pracownię projektową 44STO. Zajmuje się dostępnym budownictwem mieszkaniowym i alternatywnymi formami zamieszkania, prowadzi badania naukowe, otwarte wykłady popularyzatorskie i warsztaty projektowe. Pisze do czasopism branżowych. Promotorka kooperatyw mieszkaniowych, cohousingu i idei prawa do mieszkania. Autorka książki System do mieszkania, o dostępnym budownictwie mieszkaniowym.
-          </p>
-          <p class="event">
-          Zuzanna Kasperczyk<br />
-          ... 
-          </p>
-        </div>
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          urban drink: miejska radość w kryzysie
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <p class="event">
+          Urban drink: miejska radość w kryzysie to swobodne spotkanie online o nieformalnym charakterze na tematy
+          związane z kulturą miejską. Rozmawiać będą: Katarzyna Kajdanek, Agata Twardoch, Zuzanna Kasperczyk. Rozmowę
+          poprowadzi Klaudia Mańka.
+        </p>
+        <p class="event">
+          <strong>Gość: Katarzyna Kajdanek / Zuzanna Kasperczyk</strong><br />
+          Opis bio wkrótce...
+        </p>
+        <p class="event">
+          <strong>Gość: Agata Twardoch</strong><br />
+          Architektka i urbanistka związana z Wydziałem Architektury Politechniki Śląskiej, członkini Towarzystwa
+          Urbanistów Polskich. Współprowadzi pracownię projektową 44STO. Zajmuje się dostępnym budownictwem
+          mieszkaniowym i alternatywnymi formami zamieszkania, prowadzi badania naukowe, otwarte wykłady
+          popularyzatorskie i warsztaty projektowe. Pisze do czasopism branżowych. Promotorka kooperatyw mieszkaniowych,
+          cohousingu i idei prawa do mieszkania. Autorka książki System do mieszkania, o dostępnym budownictwie
+          mieszkaniowym.
+        </p>
       </div>
-              <div id="day23" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
+    </div>
+    <div id="day23" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
           A&lt;SYMETRIE 2/2: miejskie próby generalne
-          </h3>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <p class="event">
-          Iga Kalbarczyk / Jak Dowigałło<br />
-          ...
-          </p>
-          <p class="event">
-          Kuba Snopek<br />
-          Urbanista, pedagog i badacz miast. Dyrektor programowy Charkowskiej Szkoły Architektury i wieloletni wykładowca moskiewskiego instytutu Strelka. Jest autorem książki “Bielajewo: Zabytek Przyszłości”, poświęconej ochronie niematerialnego dziedzictwa i projektu “Architektura VII. Dnia” – badań kościołów wybudowanych w Polsce w drugiej połowie XX wieku. Kuba jest również współautorem “Sceny” – wielokrotnie nagradzanej przestrzeni publicznej w mieście Dniepr, stworzonej za pomocą crowdsourcingu i crowdfundingu. Obecnie mieszka w Berkeley i pracuje nad projektem “Real Estate Art” – krytycznymi badaniami sztuki fundowanej przez deweloperów.
-          </p>
-        </div>
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <p class="event">
+          <strong>Gość: Iga Kalbarczyk / Jak Dowigałło</strong><br />
+          Opis bio wkrótce...
+        </p>
+        <p class="event">
+          <strong>Gość: Kuba Snopek</strong><br />
+          Urbanista, pedagog i badacz miast. Dyrektor programowy Charkowskiej Szkoły Architektury i wieloletni
+          wykładowca moskiewskiego instytutu Strelka. Jest autorem książki “Bielajewo: Zabytek Przyszłości”, poświęconej
+          ochronie niematerialnego dziedzictwa i projektu “Architektura VII. Dnia” – badań kościołów wybudowanych w
+          Polsce w drugiej połowie XX wieku. Kuba jest również współautorem “Sceny” – wielokrotnie nagradzanej
+          przestrzeni publicznej w mieście Dniepr, stworzonej za pomocą crowdsourcingu i crowdfundingu. Obecnie mieszka
+          w Berkeley i pracuje nad projektem “Real Estate Art” – krytycznymi badaniami sztuki fundowanej przez
+          deweloperów.
+        </p>
       </div>
-              <div id="day24" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-          OPEN CALL: A<24 ONLINE
-          </h3>
-          <p class="event">
-          A<24 ONLINE to 24-godzinny maraton projektowy dotyczący tematyki miejskiej, podczas którego zespoły projektowe rywalizują ze sobą o wypracowanie najlepszego rozwiązania zadanego problemu. Tematem przewodnim tegorocznej edycji wydarzenia jest szeroko rozumiany kryzys. Szczególny nacisk w temacie przewodnim (ujawnionym dopiero na początku wydarzenia) będzie brak wykorzystania zasobów wodnych, jako odnawialnego surowca w ekosystemach miejskich.
-          </p>
-          <p class="event">
-          OPEN CALL ALERT! Zgłoś siebie i swój zespół do udziału w wydarzeniu! Twoja drużyna musi składać się z przedstawicieli różnych profesji (co najmniej 1 osoba z innej profesji niż reszta zespołu). Zgłoszenie jest bezpłatne. 
-          </p>
-          <p class="event">
-          GŁÓWNA NAGRODA DLA ZWYCIĘSKIEGO ZESPOŁU: 6000 PLN<br />
-          Termin zgłoszeń: do 18.10.2020<br />
-          Formularz zgłoszeniowy: <a href="http://bit.ly/afestival20a24">http://bit.ly/afestival20a24</a><br />
-          Regulamin: <a href="http://bit.ly/afestival20a24R">http://bit.ly/afestival20a24R</a>
-          </p>
-          <p class="event">
-          Harmonogram:<br />
-          do 18.10.2020 - wysyłanie zgłoszeń przez zespoły<br />
-          19.10.2020 - weryfikacja zgłoszeń oraz zakwalifikowanie do maratonu<br />
-          20-23.10.2020 - run up (wysłanie przez Organizatora niezbędnych materiałów grupom do uczestnictwa w wydarzeniu)<br />
-          24-25.10.2020 - A<24 ONLINE<br />
-          16.11.2020 - wyniki oceny prac oraz przyznanie nagrody głównej
-          </p>
-          <p class="event">
-          Wydarzenie skierowane jest do studentów i absolwentów:<br />
-          > kierunków miejskich (architektury, urbanistyki, gospodarki przestrzennej i pokrewnych)<br />
-          > kierunków artystycznych (projektowania graficznego, multimediów, komunikacji wizualnej, form przemysłowych, intermediów i wzornictwo przemysłowe, scenografia i pokrewnych)<br />
-          > kierunków humanistyczno-społecznych (socjologii, antropologii, komunikacji społecznej, kulturoznawstwa, nowych mediów i pokrewnych)<br />
-          > kierunków IT<br />
-          </p>
-          <p class="event">
-          Wszelkie pytania należy kierować na:<br />
-          adres mailowy warsztaty@antyrama.org<br />
-          dzwonić pod numer telefonu: 510 656 427
-          </p>
-          <p class="event">
-          A&lt;FESTIVAL ONLINE / #afestival<br />
-          festiwal twórców przestrzeni miejskiej<br />
-          EDUKACJA | INNOWACJA | INTEGRACJA | EKSPERYMENT
-          </p>
-        </div>
+    </div>
+    <div id="day24" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          OPEN CALL: A<24 ONLINE </h3>
+            <p class="event">
+              A<24 ONLINE to 24-godzinny maraton projektowy dotyczący tematyki miejskiej, podczas którego zespoły
+                projektowe rywalizują ze sobą o wypracowanie najlepszego rozwiązania zadanego problemu. Tematem
+                przewodnim tegorocznej edycji wydarzenia jest szeroko rozumiany kryzys. Szczególny nacisk w temacie
+                przewodnim (ujawnionym dopiero na początku wydarzenia) będzie brak wykorzystania zasobów wodnych, jako
+                odnawialnego surowca w ekosystemach miejskich. </p>
+                <p class="event">
+                  <strong>OPEN CALL ALERT! Zgłoś siebie i swój zespół do udziału w wydarzeniu! Twoja drużyna musi składać się z
+                  przedstawicieli różnych profesji (co najmniej 1 osoba z innej profesji niż reszta zespołu). Zgłoszenie
+                  jest bezpłatne.</strong>
+                </p>
+                <p class="event">
+                  <strong>GŁÓWNA NAGRODA DLA ZWYCIĘSKIEGO ZESPOŁU: 6000 PLN</strong><br />
+                  Termin zgłoszeń: do <u>18.10.2020</u><br />
+                  <strong><span style="color: red">Formularz zgłoszeniowy: <a class="registration" href="http://bit.ly/afestival20a24">http://bit.ly/afestival20a24</a></span></strong><br />
+                  Regulamin: <a href="http://bit.ly/afestival20a24R">http://bit.ly/afestival20a24R</a>
+                </p>
+                <p class="event">
+                  <strong>Harmonogram:</strong><br />
+                  do 18.10.2020 - wysyłanie zgłoszeń przez zespoły<br />
+                  19.10.2020 - weryfikacja zgłoszeń oraz zakwalifikowanie do maratonu<br />
+                  20-23.10.2020 - run up (wysłanie przez Organizatora niezbędnych materiałów grupom do uczestnictwa w
+                  wydarzeniu)<br />
+                  24-25.10.2020 - A&lt;24 ONLINE<br />
+                  16.11.2020 - wyniki oceny prac oraz przyznanie nagrody głównej
+                </p>
+                <p class="event">
+                  <strong>Wydarzenie skierowane jest do studentów i absolwentów:</strong><br />
+                  > kierunków miejskich (architektury, urbanistyki, gospodarki przestrzennej i pokrewnych)<br />
+                  > kierunków artystycznych (projektowania graficznego, multimediów, komunikacji wizualnej, form
+                  przemysłowych, intermediów i wzornictwo przemysłowe, scenografia i pokrewnych)<br />
+                  > kierunków humanistyczno-społecznych (socjologii, antropologii, komunikacji społecznej,
+                  kulturoznawstwa, nowych mediów i pokrewnych)<br />
+                  > kierunków IT<br />
+                </p>
+                <p class="event">
+                  <strong>Wszelkie pytania należy kierować na</strong>:<br />
+                  adres mailowy: <a href = "mailto: warsztaty@antyrama.org">warsztaty@antyrama.org</a><br />
+                  dzwonić pod numer telefonu: 510 656 427
+                </p>
+                <p class="event">
+                  <strong>A&lt;FESTIVAL ONLINE / #afestival</strong><br />
+                  festiwal twórców przestrzeni miejskiej<br />
+                  EDUKACJA | INNOWACJA | INTEGRACJA | EKSPERYMENT
+                </p>
       </div>
-              <div id="day25" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-            performance 3/3: Gawroński
-          </h3>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-        </div>
+    </div>
+    <div id="day25" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          performance 3/3: Gawroński
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
       </div>
-           <div id="day27" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
+    </div>
+    <div id="day27" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
           Street Cloud [MIASTORANEK] | Kiosk Umiejętności 4/4: Sztuka wyraża, uzdrawia, prowadzi
-          </h3>
-          <h4>
+        </h3>
+        <h4>
           Street Cloud [MIASTORANEK]
-          </h4>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <h4>
-           Kiosk Umiejętności 3/4: Sztuka wyraża, uzdrawia, prowadzi
-          </h4>
-          <p class="event">
-          Sztuka dotyka nas w przeróżny sposób; obraz, muzyka, rzeźba, słowo, ruch... Mamy ten dar odbierania jej zmysłami, odczuciami, porusza nas lub też nie, indywidualnie możemy dobierać ją do naszej indywidualnej osoby i potrzeb.
-          A co jeśli, tak na prawdę nie tylko mam możliwość jej podziwiania ale również każdy z nas jest zdolny do procesów twórczych, uwalniając swoją ekspresję?
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          Kiosk Umiejętności: Sztuka wyraża, uzdrawia, prowadzi
+        </h4>
+        <p class="event">
+          Sztuka dotyka nas w przeróżny sposób; obraz, muzyka, rzeźba, słowo, ruch... Mamy ten dar odbierania jej
+          zmysłami, odczuciami, porusza nas lub też nie, indywidualnie możemy dobierać ją do naszej indywidualnej osoby
+          i potrzeb.
+          A co jeśli, tak na prawdę nie tylko mam możliwość jej podziwiania ale również każdy z nas jest zdolny do
+          procesów twórczych, uwalniając swoją ekspresję?
           Czy tworzenie może ułatwić wyzdrowienie, umożliwiając komunikowanie myśli i uczuć w sposób niewerbalny?
           Zrozumienie, doznanie ulgi, wyrażenie emocji, lepsze samopoczucie dzięki sztuce?
-          Tak! Sztuka, psychologia, edukacja łączą się dając arteterapie, dziedzinę, która daje nowe metody wyrazu i komunikacji ze sobą.
-          </p> 
-          <p class="event">
-          Warsztaty dotyczą zagadnień związanych z arteterapią. Poświęcone będą uwadze ekspresji naszych ciał oraz możliwości płynących z obcowania ze sztuką, jako odbiorca, ale również jako twórca. 
-          </p> 
-          <p class="event">
-          Zuza Łapka (ŁAPKI)<br />
-          Studentka arteterapii na Uniwersytecie Śląskim, Akademii Muzycznej im. Karola Szymanowskiego, Akademii Sztuk Pięknych w Katowicach. Pracuje z wieloma formami sztuk: instalacje przestrzenne, rzeźbę, ruch i ekspresję ciała w tańcu, a w tym sztukę performance. Tworzy warsztaty, na których pracuje z ekspresją twórczą, relaksacją, ruchem, wyrażaniem się z poznawaniem nowych obszarów swojej osoby w kontakcie z ciałem, umysłem i istotą duchową (jako całość).
-          </p> 
-          <p class="event">
-          Aleksandra Kuczek<br />
-          Studentka arteterapii na Uniwersytecie Śląskim, Akademii Muzycznej im. Karola Szymanowskiego, Akademii Sztuk Pięknych w Katowicach. Zajmuję się przede wszystkich malarstwem ale jest otwarta na inne dziedziny sztuki. Jej główną inspiracją jest kobiecość, seksualność i ekspresyjność ludzkich ciał. W swoich działaniach skupia się na poruszaniu
-          tematów społecznych, w szczególności dotyczących feminizmu. Zachęca ludzi do wyrażania naturalnej ekspresji i pokonywania barier, które narzuca społeczeństwo.
-          </p> 
-        </div>
+          Tak! Sztuka, psychologia, edukacja łączą się dając arteterapie, dziedzinę, która daje nowe metody wyrazu i
+          komunikacji ze sobą.
+        </p>
+        <p class="event">
+          Warsztaty dotyczą zagadnień związanych z arteterapią. Poświęcone będą uwadze ekspresji naszych ciał oraz
+          możliwości płynących z obcowania ze sztuką, jako odbiorca, ale również jako twórca.
+        </p>
+        <p class="event">
+          <strong>Gość: Zuza Łapka (ŁAPKI)</strong><br />
+          Studentka arteterapii na Uniwersytecie Śląskim, Akademii Muzycznej im. Karola Szymanowskiego, Akademii Sztuk
+          Pięknych w Katowicach. Pracuje z wieloma formami sztuk: instalacje przestrzenne, rzeźbę, ruch i ekspresję
+          ciała w tańcu, a w tym sztukę performance. Tworzy warsztaty, na których pracuje z ekspresją twórczą,
+          relaksacją, ruchem, wyrażaniem się z poznawaniem nowych obszarów swojej osoby w kontakcie z ciałem, umysłem i
+          istotą duchową (jako całość).
+        </p>
+        <p class="event">
+          <strong>Gość: Aleksandra Kuczek</strong><br />
+          Studentka arteterapii na Uniwersytecie Śląskim, Akademii Muzycznej im. Karola Szymanowskiego, Akademii Sztuk
+          Pięknych w Katowicach. Zajmuję się przede wszystkich malarstwem ale jest otwarta na inne dziedziny sztuki. Jej
+          główną inspiracją jest kobiecość, seksualność i ekspresyjność ludzkich ciał. W swoich działaniach skupia się
+          na poruszaniu
+          tematów społecznych, w szczególności dotyczących feminizmu. Zachęca ludzi do wyrażania naturalnej ekspresji i
+          pokonywania barier, które narzuca społeczeństwo.
+        </p>
       </div>
-      <div id="day29" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
-          Street Cloud [Pobudki] | urban drink 4/4: miejski głuchy telefon, czyli problemy na liniach władzy
-          </h3>
-          <h4>
+    </div>
+    <div id="day29" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
+          Street Cloud [Pobudki] | urban drink 4/4: miejski głuchy telefon
+        </h3>
+        <h4>
           Street Cloud [Pobudki]
-          </h4>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-          <h4>
-          urban drink 3/4: miejska radość w kryzysie
-          </h4>
-          <p class="event">
-          Dlaczego tak ciężko coś załatwić w urzędzie? I czemu urzędnik nie rozumie z jakim problemem do niego przechodzimy?  I dlaczego na odpowiedź jest jak chcemy coś załatwić to musimy przychodzić na ich dyżury? Czy znają swoich wyborców, nie tylko statystycznie? Kim są radni? 
-          </p>
-          <p class="event">
-          Urban drink: miejska radość w kryzysie to swobodne spotkanie online o nieformalnym charakterze na tematy związane z kulturą miejską. Rozmawiać będą: Katarzyna Kajdanek, Agata Twardoch, Zuzanna Kasperczyk. Rozmowę poprowadzi Klaudia Mańka.
-          </p>
-          <p class="event">
-          Agnieszka Zielińska<br />
-          Prawniczka, zawodowo zajmująca się tematami związanymi głównie z prawem własności intelektualnej. Kocha Katowice i stara się robić wszystko, aby uczynić to miasto przyjaznym dla mieszkańców. Swoją przygodę z miejskim aktywizmem rozpoczęła w Fundacji Napraw Sobie Miasto, gdzie m.in. współorganizowała Żywą Ulicę i ReklamAkcję. Wykształcenie i doświadczenie zawodowe stara się wykorzystywać w działalności społecznej, dlatego chętnie dzieli się wiedzą z Katowiczanami, którzy potrzebują pomocy w zakresie przepisów dotyczących planowania przestrzennego oraz dostępu do informacji publicznej. O lepsze Katowice walczy aktualnie jako członkini kolektywu MIASTOPROJEKT oraz inicjatywy Mieszkańcy dla Katowic.
-          </p>
-          <p class="event">
-          Łukasz Borkowski<br />
-          Katowiczanin, radny miejski, przewodniczący Komisji Transportu. Działa społecznie w stowarzyszeniu BoMiasto, zaangażowany w wiele akcji miejskich, m.in. obronę Placu Szewczyka. Współorganizuje Społeczną Mapę Katowic, szkołę liderów zrównoważonego rozwoju oraz cykl debat o mieście #Katowice2050. Jest rzecznikiem prasowym Platformy Obywatelskiej w Katowicach, a w przeszłości pracował w Ministerstwie Administracji i Cyfryzacji oraz jako asystent senatora Kazimierza Kutza.
-          </p>
-          <p class="event">
-          Jarosław Gwizdak<br />
-          Prawnik, działacz społeczny, sędzia, propagator sprawnych, przyjaznych i obywatelskich instytucji życia publicznego, mediacji oraz innowacji społecznych. Członek zarządu INPRIS. Absolwent Wydziału Prawa i Administracji Uniwersytetu Śląskiego w Katowicach, studiów z zakresu prawa brytyjskiego i europejskiego (Uniwersytet w Cambridge)oraz Leadership Academy for Poland.
-          Laureat głównej nagrody pierwszej edycji plebiscytu „Obywatelski Sędzia Roku 2015” Fundacji Court Watch Polska oraz plebiscytu Dziennika Zachodniego Osobowość Roku (2017) nominowany za propagowanie w społeczeństwie polskim wiedzy o prawie w sposób zrozumiały dla każdego człowieka.
-          Współtwórca i inicjator obchodów Dnia Wymiaru Sprawiedliwości 2016 (#DWS16) w niemal 30 sądach w Polsce. Był gościem m.in. Akademii Sztuk Przepięknych Przystanku Woodstock 2017.
-          </p>
-        </div>
+        </h4>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
+        <h4>
+          urban drink: miejski głuchy telefon, czyli problemy na liniach władzy
+        </h4>
+        <p class="event">
+          Dlaczego tak ciężko coś załatwić w urzędzie? I czemu urzędnik nie rozumie z jakim problemem do niego
+          przechodzimy? I dlaczego na odpowiedź jest jak chcemy coś załatwić to musimy przychodzić na ich dyżury? Czy
+          znają swoich wyborców, nie tylko statystycznie? Kim są radni?
+        </p>
+        <p class="event">
+          Urban drink: miejska radość w kryzysie to swobodne spotkanie online o nieformalnym charakterze na tematy
+          związane z kulturą miejską. Rozmawiać będą: Katarzyna Kajdanek, Agata Twardoch, Zuzanna Kasperczyk. Rozmowę
+          poprowadzi Klaudia Mańka.
+        </p>
+        <p class="event">
+          <strong>Gość: Agnieszka Zielińska</strong><br />
+          Prawniczka, zawodowo zajmująca się tematami związanymi głównie z prawem własności intelektualnej. Kocha
+          Katowice i stara się robić wszystko, aby uczynić to miasto przyjaznym dla mieszkańców. Swoją przygodę z
+          miejskim aktywizmem rozpoczęła w Fundacji Napraw Sobie Miasto, gdzie m.in. współorganizowała Żywą Ulicę i
+          ReklamAkcję. Wykształcenie i doświadczenie zawodowe stara się wykorzystywać w działalności społecznej, dlatego
+          chętnie dzieli się wiedzą z Katowiczanami, którzy potrzebują pomocy w zakresie przepisów dotyczących
+          planowania przestrzennego oraz dostępu do informacji publicznej. O lepsze Katowice walczy aktualnie jako
+          członkini kolektywu MIASTOPROJEKT oraz inicjatywy Mieszkańcy dla Katowic.
+        </p>
+        <p class="event">
+          <strong>Gość: Łukasz Borkowski</strong><br />
+          Katowiczanin, radny miejski, przewodniczący Komisji Transportu. Działa społecznie w stowarzyszeniu BoMiasto,
+          zaangażowany w wiele akcji miejskich, m.in. obronę Placu Szewczyka. Współorganizuje Społeczną Mapę Katowic,
+          szkołę liderów zrównoważonego rozwoju oraz cykl debat o mieście #Katowice2050. Jest rzecznikiem prasowym
+          Platformy Obywatelskiej w Katowicach, a w przeszłości pracował w Ministerstwie Administracji i Cyfryzacji oraz
+          jako asystent senatora Kazimierza Kutza.
+        </p>
+        <p class="event">
+          <strong>Gość: Jarosław Gwizdak</strong><br />
+          Prawnik, działacz społeczny, sędzia, propagator sprawnych, przyjaznych i obywatelskich instytucji życia
+          publicznego, mediacji oraz innowacji społecznych. Członek zarządu INPRIS. Absolwent Wydziału Prawa i
+          Administracji Uniwersytetu Śląskiego w Katowicach, studiów z zakresu prawa brytyjskiego i europejskiego
+          (Uniwersytet w Cambridge)oraz Leadership Academy for Poland.
+          Laureat głównej nagrody pierwszej edycji plebiscytu „Obywatelski Sędzia Roku 2015” Fundacji Court Watch Polska
+          oraz plebiscytu Dziennika Zachodniego Osobowość Roku (2017) nominowany za propagowanie w społeczeństwie
+          polskim wiedzy o prawie w sposób zrozumiały dla każdego człowieka.
+          Współtwórca i inicjator obchodów Dnia Wymiaru Sprawiedliwości 2016 (#DWS16) w niemal 30 sądach w Polsce. Był
+          gościem m.in. Akademii Sztuk Przepięknych Przystanku Woodstock 2017.
+        </p>
       </div>
-      <div id="day30" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
+    </div>
+    <div id="day30" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
           Miejska Loża
-          </h3>
-          <p class="event">
-          Opis wkrótce...
-          </p>
-        </div>
+        </h3>
+        <p class="event">
+          Opis wydarzenia wkrótce...
+        </p>
       </div>
-      <div id="day31" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3>
+    </div>
+    <div id="day31" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>
           skill lab 3/3: miejskie farmy
-          </h3>
-          <p class="event">
-          Panująca pandemia wyraźnie pokazała nam jak ważna jest w naszym życiu zieleń. Kiedy zmuszeni byliśmy ograniczyć przebywanie wśród ludzi, każdy skrawek trawnika pod blokiem wielokrotnie zwiększył swoją wartość. Wielu z nas zaczęło zazieleniać swoje mieszkania i balkony. Tworząc mikro ogródki, warto jednak poznać pewne tajemnice, które pozwolą nam być bardziej ekologicznym i mniej marnotrawnym. 
-          </p>
-          <p class="event">
-          Podczas warsztatów uczestnicy stworzą farmę hydroponiczną składająca się z 2 pojemników. Poznają także podstawy teoretyczne związane z ekologią, zrównoważonym rozwojem oraz domową hodowlą roślin.
-          </p>
-          <p class="event">
-          Rejestracja kończy się xx, wyniki zostaną ogłoszone xx.
-          Rejestracja: link
-          </p>
-          <p class="event">
-          Termin wydarzenia<br />
+        </h3>
+        <p class="event">
+          Panująca pandemia wyraźnie pokazała nam jak ważna jest w naszym życiu zieleń. Kiedy zmuszeni byliśmy
+          ograniczyć przebywanie wśród ludzi, każdy skrawek trawnika pod blokiem wielokrotnie zwiększył swoją wartość.
+          Wielu z nas zaczęło zazieleniać swoje mieszkania i balkony. Tworząc mikro ogródki, warto jednak poznać pewne
+          tajemnice, które pozwolą nam być bardziej ekologicznym i mniej marnotrawnym.
+        </p>
+        <p class="event">
+          Podczas warsztatów uczestnicy stworzą farmę hydroponiczną składająca się z 2 pojemników. Poznają także
+          podstawy teoretyczne związane z ekologią, zrównoważonym rozwojem oraz domową hodowlą roślin.
+        </p>
+        <p class="event">
+          Rejestracja kończy się <u>xxx</u>, wyniki zostaną ogłoszone <u>xxx</u>.<br />
+          <strong><span style="color: red">Rejestracja: <a class="registration" href="link">link</a></span></strong>
+        </p>
+        <p class="event">
+          <strong>Termin wydarzenia</strong><br />
           data: 31.10.2020<br />
           godzina: 15.00 - 18.00
-          </p>
-          <p class="event">
-          Prowadząca: Paulina Grabowska<br />
-          Projektantka innowacji w zakresie zrównoważonego rozwoju. Uważa, że najcenniejsze, a zarazem najmniej wykorzystywane zasoby na Ziemi to różnego rodzaju zanieczyszczenia. W swoim studio NAS-DRA Conscious Design bada oraz projektuje schematy gospodarki o obiegu zamkniętym, procesy łagodzenia zmian klimatu, a także miejskie farmy.
-          Jest wykładowczynią w School of Form na Uniwersytecie SWPS. Należy do Brain Trust Boma Global. Jest licencjonowaną architektką w Holandii i Polsce. Absolwentka Wydziału Architektury Politechniki w Delft oraz Wydziału Architektury i Urbanistyki Politechniki Śląskiej w Gliwicach.
-          </p>
-        </div>
+        </p>
+        <p class="event">
+          <strong>Prowadzenie: Paulina Grabowska</strong><br />
+          Projektantka innowacji w zakresie zrównoważonego rozwoju. Uważa, że najcenniejsze, a zarazem najmniej
+          wykorzystywane zasoby na Ziemi to różnego rodzaju zanieczyszczenia. W swoim studio NAS-DRA Conscious Design bada
+          oraz projektuje schematy gospodarki o obiegu zamkniętym, procesy łagodzenia zmian klimatu, a także miejskie
+          farmy. Jest wykładowczynią w School of Form na Uniwersytecie SWPS. Należy do Brain Trust Boma Global. Jest
+          licencjonowaną architektką w Holandii i Polsce. Absolwentka Wydziału Architektury Politechniki w Delft oraz
+          Wydziału Architektury i Urbanistyki Politechniki Śląskiej w Gliwicach.
+        </p>
+    
       </div>
-      <footer>
-        <div class="socialbtns">
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/afestival.katowice"
-                class="fa fa-lg fa-facebook"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/_antyrama/"
-                class="fa fa-lg fa-instagram"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCv63YgKPku-gfxJL2OCa_VQ"
-                class="fa fa-lg fa-youtube"
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <ft>Copyright © 2020 A&lt;festival & ANTYRAMA</ft>
-      </footer>
-      <script>
-        function openModal(day) {
-          var modal = document.getElementById("day" + day);
-          if (modal) {
-            modal.style.display = "block";
+    </div>
+    <footer>
+      <div class="socialbtns">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/afestival.katowice" class="fa fa-lg fa-facebook"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_antyrama/" class="fa fa-lg fa-instagram"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCv63YgKPku-gfxJL2OCa_VQ" class="fa fa-lg fa-youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <ft>Copyright © 2020 A&lt;festival & ANTYRAMA</ft>
+    </footer>
+    <script>
+      function openModal(day) {
+        var modal = document.getElementById("day" + day);
+        if (modal) {
+          modal.style.display = "block";
 
-            var span = modal.getElementsByClassName("close")[0];
+          var span = modal.getElementsByClassName("close")[0];
 
-            span.onclick = function () {
+          span.onclick = function () {
+            modal.style.display = "none";
+          };
+
+          window.onclick = function (event) {
+            if (event.target == modal) {
               modal.style.display = "none";
-            };
-
-            window.onclick = function (event) {
-              if (event.target == modal) {
-                modal.style.display = "none";
-              }
-            };
-          }
+            }
+          };
         }
+      }
 
-        var daysFromPreviousMonth = 3;
-        var festivalYear = 2020;
-        var festivalMonth = 10;
-        var festivalStartDay = 5;
-        var festivalEndDay = 31;
+      var daysFromPreviousMonth = 3;
+      var festivalYear = 2020;
+      var festivalMonth = 10;
+      var festivalStartDay = 5;
+      var festivalEndDay = 31;
 
-        var today = new Date();
-        var today = new Date("2020/10/05");
-        var currentDay = +String(today.getDate()).padStart(2, "0");
-        var currentMonth = +String(today.getMonth() + 1).padStart(2, "0");
-        var currentYear = today.getFullYear();
-        if (currentYear == festivalYear && currentMonth == festivalMonth) {
-          var calendar = document.getElementById("calendar");
-          var days = calendar.getElementsByTagName("li");
-          var i;
-          for (i = 0; i < days.length; i++) {
-            var day = i - daysFromPreviousMonth + 1;
-            if (
-              currentDay == day &&
-              currentDay >= festivalStartDay &&
-              currentDay <= festivalEndDay
-            )
-              days[i].classList.add("today");
-            else if (
-              currentDay < day &&
-              day >= festivalStartDay &&
-              day <= festivalEndDay
-            )
-              days[i].classList.add("festival-future-day");
-            else if (currentDay > day && day >= festivalStartDay)
-              days[i].classList.add("festival-past-day");
-            else days[i].classList.remove("with-modal");
-          }
+      var today = new Date();
+      var currentDay = +String(today.getDate()).padStart(2, "0");
+      var currentMonth = +String(today.getMonth() + 1).padStart(2, "0");
+      var currentYear = today.getFullYear();
+      if (currentYear == festivalYear && currentMonth == festivalMonth) {
+        var calendar = document.getElementById("calendar");
+        var days = calendar.getElementsByTagName("li");
+        var i;
+        for (i = 0; i < days.length; i++) {
+          var day = i - daysFromPreviousMonth + 1;
+          if (
+            currentDay == day &&
+            currentDay >= festivalStartDay &&
+            currentDay <= festivalEndDay
+          )
+            days[i].classList.add("today");
+          else if (
+            currentDay < day &&
+            day >= festivalStartDay &&
+            day <= festivalEndDay
+          )
+            days[i].classList.add("festival-future-day");
+          else if (currentDay > day && day >= festivalStartDay)
+            days[i].classList.add("festival-past-day");
+          else days[i].classList.remove("with-modal");
         }
+      }
 
-        document.getElementsByClassName("arrow-down")[0].animate([{ bottom: "6vw" }, { bottom: "5.5vw" }, { bottom: "6vw" }], {
-            duration: 700,
-            iterations: Infinity,
-          });        
-      </script>
-    </main>
-  </body>
+      document.getElementsByClassName("arrow-down")[0].animate([{ bottom: "6vw" }, { bottom: "5.5vw" }, { bottom: "6vw" }], {
+        duration: 700,
+        iterations: Infinity,
+      });        
+    </script>
+  </main>
+</body>
+
 </html>

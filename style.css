@@ -116,6 +116,7 @@ h4 {
   color: black;
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
+  padding-top: 24px;
 }
 
 .arrow-down {
@@ -387,4 +388,22 @@ footer {
   font-size: 1vw;
   text-align: left;
   margin-bottom: 2rem;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a.registration{
+  color: red;
+}
+
+a.registration:hover {
+  color: red;
+  text-decoration: underline;
 }
