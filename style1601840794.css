@@ -92,7 +92,7 @@ main::before {
 h1 {
   font-family: "GlyphWorld", "SH PINSCHER";
   color: white;
-  font-size: 3vw;
+  font-size: 42px;
   text-align: left;
 }
 
@@ -199,7 +199,7 @@ ul.weekdays {
 }
 
 ul.weekdays li {
-  height: 4vw;
+  height: 16px;
   font-family: "GlyphWorld", "SH PINSCHER";
 }
 
@@ -385,7 +385,7 @@ main footer {
 footer {
   font-family: "GlyphWorld", "SH PINSCHER";
   color: gray;
-  font-size: 1vw;
+  font-size: 16px;
   text-align: left;
   margin-bottom: 2rem;
 }
@@ -417,12 +417,12 @@ a.registration:hover {
 }
 
 .mkidn {
-  background-color: white;
+  background-color: black;
   width: fit-content;
   display: inline-block;
   padding: 15px;
 }
 
 .mkidn > img {
-  width: 150px;
+  width: 100px;
 }
